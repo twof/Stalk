@@ -8,10 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, PPKControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+		
+		PPKController.enableWithConfiguration(APP_KEY, observer:self)
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -22,4 +25,3 @@ class ViewController: UIViewController {
 
 
 }
-
