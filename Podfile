@@ -4,7 +4,8 @@
 # use_frameworks!
 
 target 'stalk' do
-
+ pod 'p2pkit'
+ pod 'Firebase'
 end
 
 target 'stalkTests' do
