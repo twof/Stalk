@@ -602,7 +602,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.carl.stalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "stalk/Stalk-Bridging-Header.h";
+=======
 				SWIFT_OBJC_BRIDGING_HEADER = "stalk/Stalk-Bridging-Header.h";
+>>>>>>> 59b39e7596be644e484544d0d5a3ddbd5026bf18
 			};
 			name = Release;
 		};
