@@ -8,12 +8,10 @@
 
 import UIKit
 
-
-class ViewController: UIViewController, PPKControllerDelegate {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        PPKController.enableWithConfiguration(APP_KEY, observer:self)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -22,8 +20,5 @@ class ViewController: UIViewController, PPKControllerDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-    func PPKControllerInitialized() {
-        // ready to start discovering nearbys
-    }
 
 }
