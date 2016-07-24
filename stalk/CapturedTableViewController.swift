@@ -15,6 +15,8 @@ class CapturedTableViewController: UIViewController, UITableViewDelegate, UITabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let backItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backItem
 
         // Do any additional setup after loading the view.
     }

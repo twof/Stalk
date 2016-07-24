@@ -27,7 +27,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.90196078431372551" green="0.49411764705882355" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="selectedImageTintColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.38431372549019605" green="0.68627450980392157" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="YTc-UI-sfY" kind="relationship" relationship="viewControllers" id="diS-ub-vtw"/>
@@ -84,11 +90,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g87-0Y-UAM">
-                                <rect key="frame" x="200" y="269" width="200" height="264"/>
+                                <rect key="frame" x="200" y="334" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="g87-0Y-UAM" secondAttribute="height" multiplier="25:17" id="4ej-FS-epr"/>
                                     <constraint firstAttribute="width" constant="200" id="64e-ER-Mug"/>
-                                    <constraint firstAttribute="width" constant="200" id="bkl-3u-LOn"/>
+                                    <constraint firstAttribute="width" constant="200" id="Gaw-Ny-MOR"/>
+                                    <constraint firstAttribute="height" constant="200" id="mRn-Ed-2s8"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -98,23 +105,38 @@
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level: 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7em-NB-qeQ">
-                                <rect key="frame" x="0.0" y="189" width="600" height="21"/>
+                                <rect key="frame" x="0.0" y="254" width="600" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="A4s-Yj-m8k"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jun Ho Hong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdD-dA-SD6">
-                                <rect key="frame" x="0.0" y="150" width="600" height="21"/>
+                                <rect key="frame" x="0.0" y="215" width="600" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mCP-uI-QEh"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar1" translatesAutoresizingMaskIntoConstraints="NO" id="AwE-Hi-IaT">
-                                <rect key="frame" x="250" y="20" width="100" height="100"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;I love outside lands!&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXw-v1-lNo">
+                                <rect key="frame" x="185" y="289" width="231" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Apw-Bn-fNO"/>
-                                    <constraint firstAttribute="width" constant="100" id="Hyu-6z-EKa"/>
+                                    <constraint firstAttribute="width" constant="231" id="DxV-hq-IuO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar1" translatesAutoresizingMaskIntoConstraints="NO" id="AwE-Hi-IaT">
+                                <rect key="frame" x="250" y="85" width="100" height="100"/>
+                                <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Ipl-Yk-dqu"/>
+                                    <constraint firstAttribute="width" constant="100" id="Sdd-4T-Gcv"/>
+                                    <constraint firstAttribute="height" constant="100" id="XrD-Re-FDe"/>
                                     <constraint firstAttribute="height" constant="100" id="oEf-2U-4eo"/>
                                 </constraints>
                                 <variation key="default">
@@ -124,31 +146,23 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;I love outside lands!&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXw-v1-lNo">
-                                <rect key="frame" x="185" y="224" width="231" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="231" id="GB7-We-5N7"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="SFUIText-Light" family="SF UI Text" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KdD-dA-SD6" firstAttribute="leading" secondItem="j5D-A8-UG3" secondAttribute="leading" id="5Bf-s0-MVE"/>
-                            <constraint firstItem="AwE-Hi-IaT" firstAttribute="centerX" secondItem="KdD-dA-SD6" secondAttribute="centerX" id="5om-bY-V6b"/>
-                            <constraint firstItem="hPQ-hh-13D" firstAttribute="top" secondItem="g87-0Y-UAM" secondAttribute="bottom" constant="18" id="7KU-iy-bue"/>
-                            <constraint firstItem="cXw-v1-lNo" firstAttribute="centerX" secondItem="7em-NB-qeQ" secondAttribute="centerX" id="GI0-ew-2CQ"/>
-                            <constraint firstAttribute="trailing" secondItem="KdD-dA-SD6" secondAttribute="trailing" id="UHH-ty-1m6"/>
-                            <constraint firstItem="AwE-Hi-IaT" firstAttribute="top" secondItem="j5D-A8-UG3" secondAttribute="top" constant="20" symbolic="YES" id="UsE-wt-HKV"/>
-                            <constraint firstItem="KdD-dA-SD6" firstAttribute="leading" secondItem="7em-NB-qeQ" secondAttribute="leading" id="VaY-x0-ejf"/>
-                            <constraint firstItem="KdD-dA-SD6" firstAttribute="trailing" secondItem="7em-NB-qeQ" secondAttribute="trailing" id="iQ4-Wv-JEf"/>
-                            <constraint firstItem="cXw-v1-lNo" firstAttribute="centerX" secondItem="g87-0Y-UAM" secondAttribute="centerX" id="lCr-FI-4Fx"/>
-                            <constraint firstItem="g87-0Y-UAM" firstAttribute="top" secondItem="cXw-v1-lNo" secondAttribute="bottom" constant="24" id="mQY-F4-qPa"/>
-                            <constraint firstItem="cXw-v1-lNo" firstAttribute="top" secondItem="7em-NB-qeQ" secondAttribute="bottom" constant="14" id="nF5-e2-wCg"/>
-                            <constraint firstItem="KdD-dA-SD6" firstAttribute="top" secondItem="AwE-Hi-IaT" secondAttribute="bottom" constant="30" id="tz4-He-Exx"/>
-                            <constraint firstItem="7em-NB-qeQ" firstAttribute="top" secondItem="KdD-dA-SD6" secondAttribute="bottom" constant="18" id="xfl-3J-hYL"/>
+                            <constraint firstItem="KdD-dA-SD6" firstAttribute="top" secondItem="AwE-Hi-IaT" secondAttribute="bottom" constant="30" id="0xz-ZE-sgE"/>
+                            <constraint firstItem="cXw-v1-lNo" firstAttribute="top" secondItem="7em-NB-qeQ" secondAttribute="bottom" constant="14" id="1jT-cV-ydo"/>
+                            <constraint firstItem="AwE-Hi-IaT" firstAttribute="centerX" secondItem="KdD-dA-SD6" secondAttribute="centerX" id="Dmb-X6-uPX"/>
+                            <constraint firstItem="g87-0Y-UAM" firstAttribute="top" secondItem="cXw-v1-lNo" secondAttribute="bottom" constant="24" id="E2P-0I-k75"/>
+                            <constraint firstItem="7em-NB-qeQ" firstAttribute="centerX" secondItem="cXw-v1-lNo" secondAttribute="centerX" id="EjJ-hF-2v2"/>
+                            <constraint firstItem="cXw-v1-lNo" firstAttribute="centerY" secondItem="j5D-A8-UG3" secondAttribute="centerY" id="FV5-r9-X8e"/>
+                            <constraint firstItem="AwE-Hi-IaT" firstAttribute="top" secondItem="bNr-5b-D4O" secondAttribute="bottom" constant="21" id="I1D-fC-uGh"/>
+                            <constraint firstItem="KdD-dA-SD6" firstAttribute="leading" secondItem="j5D-A8-UG3" secondAttribute="leading" id="R7o-D8-Kxv"/>
+                            <constraint firstItem="7em-NB-qeQ" firstAttribute="top" secondItem="KdD-dA-SD6" secondAttribute="bottom" constant="18" id="Wtw-5F-H77"/>
+                            <constraint firstItem="KdD-dA-SD6" firstAttribute="trailing" secondItem="7em-NB-qeQ" secondAttribute="trailing" id="aEL-nI-ahZ"/>
+                            <constraint firstItem="KdD-dA-SD6" firstAttribute="leading" secondItem="7em-NB-qeQ" secondAttribute="leading" id="eyk-V0-DXA"/>
+                            <constraint firstItem="hPQ-hh-13D" firstAttribute="top" secondItem="g87-0Y-UAM" secondAttribute="bottom" constant="17" id="lha-u5-bFo"/>
+                            <constraint firstAttribute="trailing" secondItem="KdD-dA-SD6" secondAttribute="trailing" id="sMI-Sj-cbj"/>
+                            <constraint firstItem="cXw-v1-lNo" firstAttribute="centerX" secondItem="g87-0Y-UAM" secondAttribute="centerX" id="uCE-KQ-8NU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="f3U-E5-RVd"/>
@@ -173,6 +187,9 @@
                             <userDefinedRuntimeAttribute type="number" keyPath="yOffSet">
                                 <real key="value" value="-3"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                <color key="value" red="0.38431372549999998" green="0.68627450980000004" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="animation" destination="Oy6-8E-uDc" id="hGG-Vs-dVc"/>
@@ -182,8 +199,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rgf-Sz-mtU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.84749461209999999" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.38431372549999998" green="0.68627450980000004" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.3843137254901961" green="0.68627450980392157" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.84749461209999999" colorSpace="calibratedRGB"/>
                         </textAttributes>
@@ -216,7 +233,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RpQ-cG-YoD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.38431372549999998" green="0.68627450980000004" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.38431372549999998" green="0.68627450980000004" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -403,13 +421,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="OutsideGO" id="9jn-TH-Gkv">
                         <barButtonItem key="leftBarButtonItem" image="Contact Card" id="K0a-Rd-QyB">
-                            <color key="tintColor" red="0.098039215690000001" green="0.53725490200000003" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="a9b-5U-IAd" kind="show" id="yyE-OK-pa7"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="YfY-AM-63b">
-                            <color key="tintColor" red="0.098039215690000001" green="0.53725490200000003" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="refresh:" destination="iXE-GO-scF" id="j3m-ta-7au"/>
                             </connections>

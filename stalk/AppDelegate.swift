@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: font]
     
         }
+        UITabBar.appearance().tintColor = UIColor.blackColor()
 //        UINavigationBar.appearance().backgroundColor = UIColor.blackColor()
 //        UINavigationBar.appearance().tintColor = UIColor(red:230,green:126,blue:34,alpha:1.0)
         return true
