@@ -69,7 +69,7 @@ class P2PHelper: NSObject, PPKControllerDelegate {
 
     private static func constructAnnounceString() -> String{
         //Data layout
-        let announceString = "{\"identification\": { \"peerID\": \(PPKController.myPeerID()), \"name\": \(PeerHelper.ownAccount.name), \"description\": \(PeerHelper.ownAccount.description) }, \"location\": { \"longitude\": \(PeerHelper.ownAccount.getLongitude()), \"latitude\": \(PeerHelper.ownAccount.getLatitude())}, \"users\": ["
+        let announceString = "{\"identification\": { \"peerID\": \(PPKController.myPeerID()), \"name\": \(PeerHelper.ownAccount.name), \"description\": \(PeerHelper.ownAccount.description) }, \"location\": { \"longitude\": \(PeerHelper.ownAccount.getLongitude()), \"latitude\": \(PeerHelper.ownAccount.getLatitude())}, \"users\": \(PeerHelper.usersToString(PeerHelper.ownAccount.adjacencyList))"
         
         return announceString
     }
