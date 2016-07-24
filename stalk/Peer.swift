@@ -57,13 +57,13 @@ class Peer: PPKPeer {
         self.location = CLLocationCoordinate2D(latitude: json["location"]["longitude"].doubleValue , longitude: json["location"]["latitude"].doubleValue)
         
         
-        self.adjacencyList.append(User(peerID: PPKController.myPeerID(), name: PeerHelper.ownAccount.name, latitude: PeerHelper.ownAccount.getLatitude(), longitude: PeerHelper.ownAccount.getLongitude(), points: PeerHelper.ownAccount.points, depth: PeerHelper.ownAccount.depth))
+        self.adjacencyList.append(User(peerID: PPKController.myPeerID(), name: PeerHelper.name, latitude: PeerHelper.location.latitude, longitude: PeerHelper.location.longitude, points: PeerHelper.points, depth: PeerHelper.depth))
         
         for user in adjacencyListJson{
             self.adjacencyList.append(User(peerID: user["peerID"].stringValue, name: user["name"].stringValue, latitude: user["latitude"].doubleValue, longitude: user["longitude"].doubleValue, points: user["points"].intValue, depth: user["depth"].intValue + 1))
         }
         
-        
+        P2PHelper.constructAnnounceString()
         super.init()
         self.removeRedundencies()
     }
