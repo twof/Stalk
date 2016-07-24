@@ -19,16 +19,21 @@ class PeerHelper:NSObject, CLLocationManagerDelegate{
         manager.requestAlwaysAuthorization()
         return manager
     }()
-    
-    static var ownAccount = {
-        return Peer(name: "Alex", userDescription: "I'm pretty great", location: (PeerHelper().locationManager.location?.coordinate)!, depth: 0)
-    }()
-    
+//    
+//    static var ownAccount = Peer(name: "Alex", userDescription: "I'm pretty great", location: (PeerHelper().locationManager.location?.coordinate)!, depth: 0)
+////
+    static var name = ""
+    static var userDescription = ""
+    static var location: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 37, longitude: -122)
+    static var depth = 0
+    static var points = 0
     static var peerList = [Peer]()
+    static var userList = [User]()
     
     static func addNewPeerToList(newPeer: Peer){
         if !peerList.contains(newPeer) {
             peerList.append(newPeer)
+            
         }else{
             print("Peer already in list")
         }
@@ -48,7 +53,7 @@ class PeerHelper:NSObject, CLLocationManagerDelegate{
     }
     
     static func usersToString(arr:[User]) -> String {
-        
+        print(JSON(arr.map{$0.toJSON()}).rawString()!)
         return JSON(arr.map{$0.toJSON()}).rawString()!
         
     }
