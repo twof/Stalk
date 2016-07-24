@@ -7,36 +7,37 @@
 //
 
 import Foundation
-//import SwiftyJSON
+import SwiftyJSON
 import CoreLocation
-
-struct Request {
-    var receiver:String
-    var body:String
-//    
-//    init(json:JSON) {
-//        self.receiver = json["receiver"].stringValue
-//        self.body = json["httpRequest"].stringValue
-//    }
+class User{
+    var peerID: String!
+    var name: String!
+    var latitude: Double!
+    var longitude: Double!
+    var points: Int!
+    var depth: Int!
+    
+    init(peerID: String, name: String, latitude: Double, longitude: Double, points: Int, depth: Int){
+        
+    }
 }
 class Peer: PPKPeer {
     var name: String!
     var userDescription: String!
-    //var connectionStatus: String!
-    //var facebookID: String!
     var location:CLLocationCoordinate2D
-   // var requests:[Request]!
-    //var responses:[Request]!
+    private var adjacencyListJson: [JSON]!
+    var adjacencyList: [User]!
+
     
-//    init(json:JSON) {
-//        self.name = json["identification"]["name"].stringValue
-//        self.userDescription = json["identification"]["description"].stringValue
-//        //self.connectionStatus = json["connectionStatus"]["networkStrength"].stringValue
-//        //self.facebookID = json["identificatiom"]["facebookID"].stringValue
-//        self.location = CLLocationCoordinate2D(latitude: json["location"]["longitude"].doubleValue , longitude: json["location"]["latitude"].doubleValue)
-//        //self.requests = json["requests"].arrayValue.map(Request.init)
-//        //self.responses = json["responses"].arrayValue.map(Request.init)
-//    }
+    init(json:JSON) {
+        self.name = json["identification"]["name"].stringValue
+        self.userDescription = json["identification"]["description"].stringValue
+        self.location = CLLocationCoordinate2D(latitude: json["location"]["longitude"].doubleValue , longitude: json["location"]["latitude"].doubleValue)
+        self.adjacencyListJson = json["users"].arrayValue
+        for user in adjacencyListJson{
+            self.adjacencyList.apgpend(User(peerID: user["peerID"].stringValue, name: user["name"].stringValue, latitude: user["latitude"].doubleValue, longitude: user["longitude"].doubleValue, points: user["points"].intValue, depth: user["depth"].intValue))
+        }
+    }
     
     init(name: String, userDescription: String, facebookID: String, location: CLLocationCoordinate2D) {
         self.name = name
@@ -54,4 +55,19 @@ class Peer: PPKPeer {
     }
     
     
+}
+
+extension Dictionary
+{
+    public init(keys: [Key], values: [Value])
+    {
+        precondition(keys.count == values.count)
+        
+        self.init()
+        
+        for (index, key) in keys.enumerate()
+        {
+            self[key] = values[index]
+        }
+    }
 }

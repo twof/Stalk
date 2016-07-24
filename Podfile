@@ -7,6 +7,7 @@ target 'stalk' do
  pod 'p2pkit'
  pod 'Firebase'
  pod 'RAMAnimatedTabBarController'
+ pod 'SwiftyJSON'
 end
 
 target 'stalkTests' do

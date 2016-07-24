@@ -7,7 +7,7 @@
 //
 
 import Foundation
-//import SwiftyJSON
+import SwiftyJSON
 
 class P2PHelper: NSObject, PPKControllerDelegate {
     
@@ -32,30 +32,30 @@ class P2PHelper: NSObject, PPKControllerDelegate {
     func p2pPeerDiscovered(peer: PPKPeer!) {
         let discoveryInfoString = NSString(data: peer.discoveryInfo, encoding:NSUTF8StringEncoding)
         NSLog("%@ is here with discovery info: %@", peer.peerID, discoveryInfoString!)
-//        
-//        if let dataFromString = peer.discoveryInfo{
-//            let json = JSON(data: dataFromString)
-//            PeerHelper.addNewPeerToList(Peer(json: json))
-//        }
+        
+        if let dataFromString = peer.discoveryInfo{
+            let json = JSON(data: dataFromString)
+            PeerHelper.addNewPeerToList(Peer(json: json))
+        }
     }
     
     func p2pPeerLost(peer: PPKPeer!) {
         NSLog("%@ is no longer here", peer.peerID)
         
-//        if let dataFromString = peer.discoveryInfo{
-//            let json = JSON(data: dataFromString)
-//            PeerHelper.removePeerFromList(Peer(json: json))
-//        }
+        if let dataFromString = peer.discoveryInfo{
+            let json = JSON(data: dataFromString)
+            PeerHelper.removePeerFromList(Peer(json: json))
+        }
     }
     
     func discoveryInfoUpdatedForPeer(peer: PPKPeer!) {
         let discoveryInfo = NSString(data: peer.discoveryInfo, encoding: NSUTF8StringEncoding)
         NSLog("%@ has updated discovery info: %@", peer.peerID, discoveryInfo!)
         
-//        if let dataFromString = peer.discoveryInfo{
-//            let json = JSON(data: dataFromString)
-//            PeerHelper.updatePeerFromList(Peer(json: json))
-//        }
+        if let dataFromString = peer.discoveryInfo{
+            let json = JSON(data: dataFromString)
+            PeerHelper.updatePeerFromList(Peer(json: json))
+        }
     }
     
     func proximityStrengthChangedForPeer(peer: PPKPeer!) {
@@ -69,7 +69,8 @@ class P2PHelper: NSObject, PPKControllerDelegate {
 
     private static func constructAnnounceString() -> String{
         //Data layout
-        let announceString = "{\"identification\": { \"peerID\": \(PPKController.myPeerID()), \"name\": \(PeerHelper.ownAccount.name), \"description\": \(PeerHelper.ownAccount.description) }, \"location\": { \"longitude\": \"longitude\", \"latitude\": \"latitude\"}}"
-    return announceString
+        let announceString = "{\"identification\": { \"peerID\": \(PPKController.myPeerID()), \"name\": \(PeerHelper.ownAccount.name), \"description\": \(PeerHelper.ownAccount.description) }, \"location\": { \"longitude\": \(PeerHelper.ownAccount.getLongitude()), \"latitude\": \(PeerHelper.ownAccount.getLatitude())}, \"users\": ["
+        
+        return announceString
     }
 }
