@@ -10,7 +10,7 @@ import CoreLocation
 extension MapViewController: CLLocationManagerDelegate{
 	
 //	func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
-//		<#code#>
+//		
 //	}
 	func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 		

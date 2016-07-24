@@ -74,7 +74,6 @@ class ProfileViewController: UIViewController, UITabBarControllerDelegate {
             self.tabBarController!.presentViewController(vcQR, animated: true, completion: nil)
             return false
         } else {
-            print("A")
             return true
         }
     }
