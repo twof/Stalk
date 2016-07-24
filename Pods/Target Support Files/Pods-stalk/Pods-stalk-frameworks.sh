@@ -85,17 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework"
-<<<<<<< HEAD
+  install_framework "$BUILT_PRODUCTS_DIR/Sonar/Sonar.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Sonar/Sonar.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
-=======
-  install_framework "$BUILT_PRODUCTS_DIR/Sonar/Sonar.framework"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Sonar/Sonar.framework"
->>>>>>> ffd8779707aff7d3a1c71e729e26bdb0bbd91a31
 fi

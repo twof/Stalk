@@ -9,6 +9,7 @@
 import Foundation
 import SwiftyJSON
 import CoreLocation
+
 class User{
     var peerID: String!
     var name: String!
@@ -18,9 +19,15 @@ class User{
     var depth: Int!
     
     init(peerID: String, name: String, latitude: Double, longitude: Double, points: Int, depth: Int){
-        
+        self.peerID = peerID
+        self.name = name
+        self.latitude = latitude
+        self.longitude = longitude
+        self.points = points
+        self.depth = depth
     }
 }
+
 class Peer: PPKPeer {
     var name: String!
     var userDescription: String!
@@ -55,19 +62,4 @@ class Peer: PPKPeer {
     }
     
     
-}
-
-extension Dictionary
-{
-    public init(keys: [Key], values: [Value])
-    {
-        precondition(keys.count == values.count)
-        
-        self.init()
-        
-        for (index, key) in keys.enumerate()
-        {
-            self[key] = values[index]
-        }
-    }
 }
