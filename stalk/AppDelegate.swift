@@ -16,7 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-
+        if let font = UIFont(name: "SFUIText-Light", size: 28) {
+            UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: font]
+    
+        }
+//        UINavigationBar.appearance().backgroundColor = UIColor.blackColor()
+//        UINavigationBar.appearance().tintColor = UIColor(red:230,green:126,blue:34,alpha:1.0)
         return true
     }
 

@@ -18,6 +18,9 @@ class PeopleViewController: UIViewController,SonarViewDelegate,SonarViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.whiteColor()
+        let backItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backItem
         PPKController.enableWithConfiguration(APP_KEY, observer:self)
         PPKController.enableProximityRanging()
         // Do any additional setup after loading the view, typically from a nib.
