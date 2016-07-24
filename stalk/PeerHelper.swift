@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class PeerHelper{
     static var ownAccount: Peer!
@@ -31,6 +32,12 @@ class PeerHelper{
             peerList.removeAtIndex(peerList.indexOf(peer)!)
             peerList.append(peer)
         }
+    }
+    
+    static func usersToString(arr:[User]) -> String {
+        
+        return JSON(arr.map{$0.toJSON()}).rawString()!
+        
     }
 }
 

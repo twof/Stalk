@@ -20,6 +20,7 @@ PODS:
   - QRCodeReaderViewController (4.0.1)
   - RAMAnimatedTabBarController (1.5.3)
   - Sonar (2.0.1)
+  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Firebase
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - QRCodeReaderViewController (~> 4.0.1)
   - RAMAnimatedTabBarController
   - Sonar
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
   Firebase: 6250071f0e2440a5c4c67b8cb6b868f868237ac3
@@ -39,7 +41,8 @@ SPEC CHECKSUMS:
   QRCodeReaderViewController: 6538745c8f4ffa9407a26bd7f9489ea01739e7b0
   RAMAnimatedTabBarController: 04b624cf8958a0032bf7fa9c0f2c515f59d30b9c
   Sonar: b99ac7801de96f7b1da2b7977403c23ab4dda271
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: af0a5403e86ac53b922e6e53396f3e222c93d659
+PODFILE CHECKSUM: d17ed17a690086347681f018a41bd79dbb7b2d65
 
 COCOAPODS: 1.0.1

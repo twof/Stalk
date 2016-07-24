@@ -7,9 +7,11 @@ target 'stalk' do
  pod 'p2pkit'
  pod 'Firebase'
  pod 'RAMAnimatedTabBarController'
+<<<<<<< HEAD
  pod 'SwiftyJSON'
+=======
  pod 'Sonar'
- pod 'QRCodeReaderViewController', '~> 4.0.1'
+>>>>>>> ffd8779707aff7d3a1c71e729e26bdb0bbd91a31
 end
 
 target 'stalkTests' do
