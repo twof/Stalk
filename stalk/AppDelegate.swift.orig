@@ -15,6 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 59b39e7596be644e484544d0d5a3ddbd5026bf18
         return true
     }
 
