@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qt5-4b-uQk">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Animated Tab Bar Controller-->
+        <scene sceneID="hNQ-yQ-AA4">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qt5-4b-uQk" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="SH2-aI-otB">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="YTc-UI-sfY" kind="relationship" relationship="viewControllers" id="m0y-vr-IB4"/>
+                        <segue destination="oTe-dn-nuU" kind="relationship" relationship="viewControllers" id="UOn-2Q-yBw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1X-SA-On7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="192" y="320"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="T4v-gx-7iR">
+            <objects>
+                <viewController id="Vg8-T3-PDi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bNr-5b-D4O"/>
+                        <viewControllerLayoutGuide type="bottom" id="hPQ-hh-13D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j5D-A8-UG3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="f3U-E5-RVd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xRO-um-XP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1829" y="1056"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jgx-Gx-a3a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YTc-UI-sfY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Contact Card" selectedImage="Contact Card Filled" id="dxJ-fg-PwT" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="yOffSet">
+                                <real key="value" value="-3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="animation" destination="rHx-L4-qfw" id="Dce-KU-wJO"/>
+                        </connections>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rgf-Sz-mtU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iXE-GO-scF" kind="relationship" relationship="rootViewController" id="UDp-63-Hag"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s4W-Ij-lvK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="rHx-L4-qfw" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="-567"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vFb-Qr-SFF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oTe-dn-nuU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Gender Neutral User" selectedImage="Gender Neutral User Filled" id="fvR-Pf-kBY" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="yOffSet">
+                                <real key="value" value="-3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="animation" destination="GCD-Hr-6a0" id="xa8-nF-FfM"/>
+                        </connections>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RpQ-cG-YoD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Vg8-T3-PDi" kind="relationship" relationship="rootViewController" id="Lwd-kc-0wc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GkP-Wb-DIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="GCD-Hr-6a0" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="1056"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="0Hx-kG-5eq">
+            <objects>
+                <viewController id="iXE-GO-scF" customClass="PeopleViewController" customModule="stalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JpV-hc-IgB"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Xw-HD-5yT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c5c-MV-3nW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sct-iA-4vq" customClass="SonarView" customModule="Sonar">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T45-t9-GEi">
+                                <rect key="frame" x="531" y="74" width="49" height="29"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                <state key="normal" title="RELOAD">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.2156862766" blue="0.23529411850000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reloadData:" destination="iXE-GO-scF" eventType="touchUpInside" id="wse-OX-ggi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Sct-iA-4vq" secondAttribute="bottom" id="7Gv-Ho-kSI"/>
+                            <constraint firstItem="Sct-iA-4vq" firstAttribute="top" secondItem="c5c-MV-3nW" secondAttribute="top" id="MhW-FA-zSv"/>
+                            <constraint firstAttribute="trailing" secondItem="Sct-iA-4vq" secondAttribute="trailing" id="WEB-sH-f1B"/>
+                            <constraint firstItem="T45-t9-GEi" firstAttribute="top" secondItem="JpV-hc-IgB" secondAttribute="bottom" constant="10" id="XpP-Hh-Otk"/>
+                            <constraint firstItem="Sct-iA-4vq" firstAttribute="leading" secondItem="c5c-MV-3nW" secondAttribute="leading" id="lnd-67-Yta"/>
+                            <constraint firstAttribute="trailing" secondItem="T45-t9-GEi" secondAttribute="trailing" constant="20" id="rpq-tc-8tt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="People" id="9jn-TH-Gkv"/>
+                    <connections>
+                        <outlet property="sonarView" destination="Sct-iA-4vq" id="jRt-PF-FzE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HOe-fL-37f" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1795" y="-567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Contact Card" width="34" height="34"/>
+        <image name="Contact Card Filled" width="34" height="34"/>
+        <image name="Gender Neutral User" width="34" height="34"/>
+        <image name="Gender Neutral User Filled" width="34" height="34"/>
+    </resources>
+</document>

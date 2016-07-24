@@ -92,9 +92,13 @@ SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+<<<<<<< HEAD
 			<string>The MIT License (MIT)
 
 Copyright (c) 2014 Ruoyu Fu
+=======
+			<string>Copyright (c) 2016 Ale&#353; Kocur &lt;ales@thefuntasty.com&gt;
+>>>>>>> ffd8779707aff7d3a1c71e729e26bdb0bbd91a31
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -115,7 +119,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 </string>
 			<key>Title</key>
+<<<<<<< HEAD
 			<string>SwiftyJSON</string>
+=======
+			<string>Sonar</string>
+>>>>>>> ffd8779707aff7d3a1c71e729e26bdb0bbd91a31
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

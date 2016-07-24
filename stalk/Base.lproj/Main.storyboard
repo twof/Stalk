@@ -4,31 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--People-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="stalk" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohA-10-YFb">
-                                <rect key="frame" x="277" y="417" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="People" id="1Td-bZ-hlz"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1829" y="-567"/>
-        </scene>
         <!--Animated Tab Bar Controller-->
         <scene sceneID="hNQ-yQ-AA4">
             <objects>
@@ -90,7 +65,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2YP-pU-Txq"/>
+                        <segue destination="iXE-GO-scF" kind="relationship" relationship="rootViewController" id="UDp-63-Hag"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s4W-Ij-lvK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -128,7 +103,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GkP-Wb-DIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="GCD-Hr-6a0" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController"/>
             </objects>
-            <point key="canvasLocation" x="1017" y="1056"/>
+            <point key="canvasLocation" x="1010" y="1056"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="0Hx-kG-5eq">
+            <objects>
+                <viewController id="iXE-GO-scF" customClass="PeopleViewController" customModule="stalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JpV-hc-IgB"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Xw-HD-5yT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c5c-MV-3nW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sct-iA-4vq" customClass="SonarView" customModule="Sonar">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T45-t9-GEi">
+                                <rect key="frame" x="531" y="74" width="49" height="29"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                <state key="normal" title="RELOAD">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.2156862766" blue="0.23529411850000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reloadData:" destination="iXE-GO-scF" eventType="touchUpInside" id="wse-OX-ggi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Sct-iA-4vq" secondAttribute="bottom" id="7Gv-Ho-kSI"/>
+                            <constraint firstItem="Sct-iA-4vq" firstAttribute="top" secondItem="c5c-MV-3nW" secondAttribute="top" id="MhW-FA-zSv"/>
+                            <constraint firstAttribute="trailing" secondItem="Sct-iA-4vq" secondAttribute="trailing" id="WEB-sH-f1B"/>
+                            <constraint firstItem="T45-t9-GEi" firstAttribute="top" secondItem="JpV-hc-IgB" secondAttribute="bottom" constant="10" id="XpP-Hh-Otk"/>
+                            <constraint firstItem="Sct-iA-4vq" firstAttribute="leading" secondItem="c5c-MV-3nW" secondAttribute="leading" id="lnd-67-Yta"/>
+                            <constraint firstAttribute="trailing" secondItem="T45-t9-GEi" secondAttribute="trailing" constant="20" id="rpq-tc-8tt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="People" id="9jn-TH-Gkv"/>
+                    <connections>
+                        <outlet property="sonarView" destination="Sct-iA-4vq" id="jRt-PF-FzE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HOe-fL-37f" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1795" y="-567"/>
         </scene>
     </scenes>
     <resources>

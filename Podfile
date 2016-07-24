@@ -8,6 +8,7 @@ target 'stalk' do
  pod 'Firebase'
  pod 'RAMAnimatedTabBarController'
  pod 'SwiftyJSON'
+ pod 'Sonar'
 end
 
 target 'stalkTests' do

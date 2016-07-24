@@ -51,11 +51,17 @@ SOFTWARE.
 
 
 
+<<<<<<< HEAD
 ## SwiftyJSON
 
 The MIT License (MIT)
 
 Copyright (c) 2014 Ruoyu Fu
+=======
+## Sonar
+
+Copyright (c) 2016 Aleš Kocur <ales@thefuntasty.com>
+>>>>>>> ffd8779707aff7d3a1c71e729e26bdb0bbd91a31
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

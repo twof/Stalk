@@ -1,0 +1,24 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+use_frameworks!
+
+target 'stalk' do
+ pod 'p2pkit'
+ pod 'Firebase'
+ pod 'RAMAnimatedTabBarController'
+<<<<<<< HEAD
+ pod 'SwiftyJSON'
+=======
+ pod 'Sonar'
+>>>>>>> ffd8779707aff7d3a1c71e729e26bdb0bbd91a31
+end
+
+target 'stalkTests' do
+
+end
+
+target 'stalkUITests' do
+
+end
+
