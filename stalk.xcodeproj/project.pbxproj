@@ -16,6 +16,9 @@
 		976691211D44081B007713F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9766911F1D44081B007713F0 /* LaunchScreen.storyboard */; };
 		9766912C1D44081B007713F0 /* stalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9766912B1D44081B007713F0 /* stalkTests.swift */; };
 		976691371D44081B007713F0 /* stalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976691361D44081B007713F0 /* stalkUITests.swift */; };
+		AD6CB1241D45355F00DA814D /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6CB1221D45355F00DA814D /* SignUpView.xib */; };
+		AD6CB1251D45355F00DA814D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CB1231D45355F00DA814D /* SignUpViewController.swift */; };
+		AD6CB1271D4535EF00DA814D /* FrostedSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CB1261D4535EF00DA814D /* FrostedSidebar.swift */; };
 		BF56A45F1D44AE6100D9BFFE /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF56A45E1D44AE6100D9BFFE /* Keys.swift */; };
 		BF56A4611D44AFB100D9BFFE /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF56A4601D44AFB100D9BFFE /* PeopleViewController.swift */; };
 		BF56A4651D44B21000D9BFFE /* cellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF56A4641D44B21000D9BFFE /* cellView.swift */; };
@@ -99,6 +102,9 @@
 		976691381D44081B007713F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EFC788E6EB7F64E14991A74 /* Pods-stalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stalkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-stalkUITests/Pods-stalkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9FA8E916BF6D69D91646048F /* Pods-stalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-stalk/Pods-stalk.release.xcconfig"; sourceTree = "<group>"; };
+		AD6CB1221D45355F00DA814D /* SignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
+		AD6CB1231D45355F00DA814D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AD6CB1261D4535EF00DA814D /* FrostedSidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrostedSidebar.swift; sourceTree = "<group>"; };
 		B1794B98B084773762B6A965 /* Pods-stalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stalkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stalkTests/Pods-stalkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF56A45E1D44AE6100D9BFFE /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		BF56A4601D44AFB100D9BFFE /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +227,8 @@
 		976691121D44081B007713F0 /* stalk */ = {
 			isa = PBXGroup;
 			children = (
+				AD6CB1261D4535EF00DA814D /* FrostedSidebar.swift */,
+				AD6CB1211D45355F00DA814D /* Login */,
 				BF56A46A1D44C55600D9BFFE /* MAP */,
 				BF56A4661D44B35800D9BFFE /* TestSonarItemView.xib */,
 				BF56A4671D44B35800D9BFFE /* TestSonarItemView.swift */,
@@ -262,6 +270,15 @@
 				976691381D44081B007713F0 /* Info.plist */,
 			);
 			path = stalkUITests;
+			sourceTree = "<group>";
+		};
+		AD6CB1211D45355F00DA814D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AD6CB1221D45355F00DA814D /* SignUpView.xib */,
+				AD6CB1231D45355F00DA814D /* SignUpViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		BF56A46A1D44C55600D9BFFE /* MAP */ = {
@@ -398,7 +415,7 @@
 				TargetAttributes = {
 					9766910F1D44081B007713F0 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 4ZK6J4XJ2H;
+						DevelopmentTeam = 558QPUSJMU;
 					};
 					976691261D44081B007713F0 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -456,6 +473,7 @@
 				BFB0EB0D1D450ED700CD4549 /* SF-UI-Text-Ultrathin.otf in Resources */,
 				BFB0EAFE1D450ED700CD4549 /* SF-UI-Display-Semibold.otf in Resources */,
 				BFB0EB0E1D450ED700CD4549 /* SF-UI-Text-UltrathinItalic.otf in Resources */,
+				AD6CB1241D45355F00DA814D /* SignUpView.xib in Resources */,
 				BFB0EAFD1D450ED700CD4549 /* SF-UI-Display-Regular.otf in Resources */,
 				BFB0EB001D450ED700CD4549 /* SF-UI-Display-Ultralight.otf in Resources */,
 				BF56A4681D44B35800D9BFFE /* TestSonarItemView.xib in Resources */,
@@ -617,6 +635,8 @@
 				BF56A45F1D44AE6100D9BFFE /* Keys.swift in Sources */,
 				BFB0EB151D452DF800CD4549 /* MVCMapKit.swift in Sources */,
 				BFAD42591D44A70600D5B36B /* P2PHelper.swift in Sources */,
+				AD6CB1251D45355F00DA814D /* SignUpViewController.swift in Sources */,
+				AD6CB1271D4535EF00DA814D /* FrostedSidebar.swift in Sources */,
 				BF56A4761D44CFBD00D9BFFE /* ProfileViewController.swift in Sources */,
 				BFB0EB181D452DF800CD4549 /* MapViewController.swift in Sources */,
 				BFAD425A1D44A70600D5B36B /* Peer.swift in Sources */,

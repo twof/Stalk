@@ -65,11 +65,12 @@ class Peer: PPKPeer {
         self.removeRedundencies()
     }
     
-    init(name: String, userDescription: String, location: CLLocationCoordinate2D) {
+    init(name: String, userDescription: String, location: CLLocationCoordinate2D, depth: Int) {
         self.name = name
         self.userDescription = userDescription
         self.location = location
-        
+        self.depth = depth
+        self.points = 0
         self.adjacencyList = []
     }
     
