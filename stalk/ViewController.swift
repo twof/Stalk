@@ -26,6 +26,7 @@ class ViewController: UIViewController, PPKControllerDelegate {
     func PPKControllerInitialized() {
         // ready to start discovering nearbys
         let myDiscoveryInfo = "Hello from Swift!, Hey Justin!".dataUsingEncoding(NSUTF8StringEncoding)
+        NSLog("%@", String(myDiscoveryInfo))
         PPKController.startP2PDiscoveryWithDiscoveryInfo(myDiscoveryInfo, stateRestoration: false)
     }
 
