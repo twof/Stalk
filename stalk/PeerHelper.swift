@@ -8,9 +8,19 @@
 
 import Foundation
 import SwiftyJSON
+import CoreLocation
 
-class PeerHelper{
-    static var ownAccount: Peer!
+class PeerHelper:NSObject, CLLocationManagerDelegate{
+    
+    lazy var locationManager: CLLocationManager! = {
+        let manager = CLLocationManager()
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.delegate = self
+        manager.requestAlwaysAuthorization()
+        return manager
+    }()
+    
+    static var ownAccount = Peer(name: "Alex", userDescription: "I'm pretty great", location: (PeerHelper().locationManager.location?.coordinate)!)
     static var peerList: [Peer]!
     
     static func addNewPeerToList(newPeer: Peer){

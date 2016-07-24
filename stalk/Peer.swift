@@ -61,11 +61,12 @@ class Peer: PPKPeer {
         self.removeRedundencies()
     }
     
-    init(name: String, userDescription: String, facebookID: String, location: CLLocationCoordinate2D) {
+    init(name: String, userDescription: String, location: CLLocationCoordinate2D) {
         self.name = name
         self.userDescription = userDescription
-        //self.facebookID = facebookID
         self.location = location
+        
+        self.adjacencyList = []
     }
     
     func getLongitude() -> Double {

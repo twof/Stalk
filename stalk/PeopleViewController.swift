@@ -10,8 +10,9 @@ import UIKit
 import CoreLocation
 import Sonar
 import MapKit
+import SwiftyJSON
 
-class PeopleViewController: UIViewController,SonarViewDelegate,SonarViewDataSource,PPKControllerDelegate {
+class PeopleViewController: UIViewController,SonarViewDelegate,SonarViewDataSource, CLLocationManagerDelegate {
     @IBOutlet weak var sonarView: SonarView!
     private lazy var distanceFormatter: MKDistanceFormatter = MKDistanceFormatter()
     
@@ -23,7 +24,6 @@ class PeopleViewController: UIViewController,SonarViewDelegate,SonarViewDataSour
         PPKController.enableWithConfiguration(APP_KEY, observer:self)
         PPKController.enableProximityRanging()
         // Do any additional setup after loading the view, typically from a nib.
-        
         self.sonarView.delegate = self
         self.sonarView.dataSource = self
         
@@ -97,10 +97,58 @@ class PeopleViewController: UIViewController,SonarViewDelegate,SonarViewDataSour
 
 }
 
-
+extension PeopleViewController: PPKControllerDelegate{
+    func PPKControllerInitialized() {
+        // ready to start discovering nearbys
+        let myDiscoveryInfo = "Hello from Swift!, Hey Justin!".dataUsingEncoding(NSUTF8StringEncoding)
+        print(NSString(data: myDiscoveryInfo!, encoding: NSUTF8StringEncoding)!)
+        PPKController.startP2PDiscoveryWithDiscoveryInfo(myDiscoveryInfo, stateRestoration: false)
+        P2PHelper.setNetworkStatus(P2PHelper.constructAnnounceString())
+        print(P2PHelper.anounceStringHolder)
+    }
+    
+    func p2pPeerDiscovered(peer: PPKPeer!) {
+        let discoveryInfoString = NSString(data: peer.discoveryInfo, encoding:NSUTF8StringEncoding)
+        NSLog("%@ is here with discovery info: %@", peer.peerID, discoveryInfoString!)
+        
+        if let dataFromString = peer.discoveryInfo{
+            let json = JSON(data: dataFromString)
+            PeerHelper.addNewPeerToList(Peer(json: json))
+        }
+    }
+    
+    func p2pPeerLost(peer: PPKPeer!) {
+        NSLog("%@ is no longer here", peer.peerID)
+        
+        if let dataFromString = peer.discoveryInfo{
+            let json = JSON(data: dataFromString)
+            PeerHelper.removePeerFromList(Peer(json: json))
+        }
+    }
+    
+    func discoveryInfoUpdatedForPeer(peer: PPKPeer!) {
+        let discoveryInfo = NSString(data: peer.discoveryInfo, encoding: NSUTF8StringEncoding)
+        NSLog("%@ has updated discovery info: %@", peer.peerID, discoveryInfo!)
+        
+        if let dataFromString = peer.discoveryInfo{
+            let json = JSON(data: dataFromString)
+            PeerHelper.updatePeerFromList(Peer(json: json))
+        }
+    }
+    
+    func proximityStrengthChangedForPeer(peer: PPKPeer!) {
+        if (peer.proximityStrength.rawValue > PPKProximityStrength.Weak.rawValue) {
+            NSLog("%@ is in range, do something with it", peer.peerID);
+        }
+        else {
+            NSLog("%@ is not yet in range", peer.peerID);
+        }
+    }
+}
 
 
 func delay(delay: Double, closure: Void -> Void) {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), closure)
 }
+
 
