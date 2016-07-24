@@ -7,6 +7,7 @@ target 'stalk' do
  pod 'p2pkit'
  pod 'Firebase'
  pod 'RAMAnimatedTabBarController'
+ pod 'Sonar'
 end
 
 target 'stalkTests' do
