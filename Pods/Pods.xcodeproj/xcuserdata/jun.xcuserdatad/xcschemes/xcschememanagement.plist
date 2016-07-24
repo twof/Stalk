@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>QRCodeReaderViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>RAMAnimatedTabBarController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,27 +42,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>30A55D792463968C990E998B17633CCE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83EF5FDB8BEE19B5BAE3043ECC707B08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86AEFDFD5F1BF39116F01D1B2FF5C2E9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8818149C9CA0F6474758C88A44B51667</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9B3C19EAE84853A2415EF59C4E5AF288</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B027D2122C7C223CB574C04B58BFA444</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C683D1B5229A02C4A2E318724805BE8A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E0E11C5571C3E391EEC22E397DDE4FD7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E5664DF747397A36D3FDAF039AF6C57E</key>
+		<key>BC00C8FBBC26439D2A93CB68089B82AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

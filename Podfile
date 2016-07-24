@@ -8,6 +8,7 @@ target 'stalk' do
  pod 'Firebase'
  pod 'RAMAnimatedTabBarController'
  pod 'Sonar'
+ pod 'QRCodeReaderViewController', '~> 4.0.1'
 end
 
 target 'stalkTests' do

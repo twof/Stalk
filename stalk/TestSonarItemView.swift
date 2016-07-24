@@ -13,6 +13,7 @@ class TestSonarItemView: SonarItemView {
 
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var label: UILabel!
     override init(frame: CGRect) {
         super.init(frame: frame)
     }

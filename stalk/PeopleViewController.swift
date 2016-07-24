@@ -12,7 +12,6 @@ import Sonar
 import MapKit
 
 class PeopleViewController: UIViewController,SonarViewDelegate,SonarViewDataSource {
-    
     @IBOutlet weak var sonarView: SonarView!
     private lazy var distanceFormatter: MKDistanceFormatter = MKDistanceFormatter()
     
@@ -56,11 +55,11 @@ class PeopleViewController: UIViewController,SonarViewDelegate,SonarViewDataSour
     func sonarView(sonarView: SonarView, numberOfItemForWaveIndex waveIndex: Int) -> Int {
         switch waveIndex {
         case 0:
-            return 8
+            return 3
         case 1:
-            return 10
+            return 3
         case 2:
-            return 10
+            return 3
         default:
             return 2
         }
@@ -69,7 +68,7 @@ class PeopleViewController: UIViewController,SonarViewDelegate,SonarViewDataSour
     func sonarView(sonarView: SonarView, itemViewForWave waveIndex: Int, atIndex: Int) -> SonarItemView {
         let itemView = self.newItemView()
         itemView.imageView.image = randomAvatar()
-        
+        itemView.label.text = "MC"
         return itemView
     }
     
