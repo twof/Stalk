@@ -6,7 +6,7 @@ stalk/Keys.swift
 ## Build generated
 build/
 DerivedData/
-DS.Store
+.DS_Store
 
 ## Various settings
 *.pbxuser
