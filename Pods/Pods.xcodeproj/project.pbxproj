@@ -7,135 +7,139 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DFCB20A28FA67BD3693B2448E77847F /* Pods-stalkUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 623AEFDAE11C2C39190186D46FD3EFF8 /* Pods-stalkUITests-dummy.m */; };
-		0EBEE5F0EC8044DF3136B49C40AF314D /* Pods-stalk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5962D29769BE3E3C0A0D98D40D60E0 /* Pods-stalk-dummy.m */; };
-		21A1CD796C89F181AAC1DC68AE4DAC90 /* Pods-stalkTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E833C1E75525E286495D05451550A1FC /* Pods-stalkTests-dummy.m */; };
-		43E11073083FFB27472C290D5F1B5856 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		4E2820BC8E6DEC5FC0360E741D3BB8ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		FCFA4527F76050442244017FA8C5C1F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		053028652BBE3104D1FCEFFB3285FF61 /* Pods-stalkTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2004766C1E743A94AD82C8EB706530E4 /* Pods-stalkTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B036DC5943A68AA30BA00791E317D5A /* RAMAnimatedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9DD38B94BDA908AA006D5B496227AA /* RAMAnimatedTabBarController.swift */; };
+		1DF0DB09C60EF3C477D3EFC9ADD28A4A /* RAMFumeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D59995B58985C406A2EF0CD843DD3D7 /* RAMFumeAnimation.swift */; };
+		2A313943497821CFBE5052D7B3F04F06 /* RAMFrameItemAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8CF9ED24246ED9484056456D7771ED /* RAMFrameItemAnimation.swift */; };
+		314C31EDA9CE4C8AFEA67564320CEAE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		45FB39278D06C2B647BAAC48781F4C3A /* RAMTransitionItemAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025AD77EEB38D472D2E6BCF2646E2F3 /* RAMTransitionItemAnimations.swift */; };
+		4ECC67005D8281FC802FBAB94D1D3C2A /* RAMBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85D5E3DA794E0589C88BED668CDBA24 /* RAMBadge.swift */; };
+		60279D6A2D13C7602AF2278E10718874 /* Pods-stalkUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B1867614B444C77B09CD295B11E6A4 /* Pods-stalkUITests-dummy.m */; };
+		66853B91810681EC6238E8664D7F03EF /* Pods-stalk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEDEE7CFC8A34281E77756393B02531 /* Pods-stalk-dummy.m */; };
+		7DDB740B75F4A9575FF8A76C1F348B33 /* Pods-stalk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5F9FD223120AC808E96A2386661C23 /* Pods-stalk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A9FCC53388FAFF82FDFAE9F443DC5D3 /* RAMAnimatedTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B74BD8D3A0D9D2ADD18D10E689758A4 /* RAMAnimatedTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E3B043868E2E54278342E672B50360D /* RAMBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE81CD6964CB55566922D76C9A51F6 /* RAMBounceAnimation.swift */; };
+		9E5FF87A4791B8F8355ABC605C5F03EB /* RAMAnimatedTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D78D9EB461FC9798D58D4DA07528C25 /* RAMAnimatedTabBarController-dummy.m */; };
+		B314366DC093308392578DEC1F3AC5D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		CA82CC764DE26C022F2BF4AD9A54A8F6 /* Pods-stalkTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D02C7CBDDBF0C892718355967A6FD5E /* Pods-stalkTests-dummy.m */; };
+		E12B093B95CBE2516EA050729E3277F0 /* RAMRotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0266BB58C20FD243F1336AED1012FA /* RAMRotationAnimation.swift */; };
+		E42D5FB4D202BA3A7CED18C55DB97AFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		EA3E3F73A7747F59CDE12AA063E9E7FD /* RAMItemAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1865D1F64EFDA89C1F154C439C29838 /* RAMItemAnimationProtocol.swift */; };
+		EC0677FF73AD582256D033BD4190CE72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		FC929D2F91F0F590520B2BBA6FB5B7E0 /* Pods-stalkUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F609C7E9FF48A0B1A2DA27C4796FC78 /* Pods-stalkUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BB9F6F0769453303EC36A6B979EA8C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E97BD8131324B31FF784097286D18AF;
+			remoteInfo = RAMAnimatedTabBarController;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		00597391660DA2318A827F7DC94FC808 /* Pods-stalk-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stalk-acknowledgements.plist"; sourceTree = "<group>"; };
-		02A8B3248DD98D249D572D00F31B7F83 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		0726BA9B00401CE6D7AC1387D9199B76 /* Pods-stalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stalkUITests.release.xcconfig"; sourceTree = "<group>"; };
-		0EC6BDA479621E7120CF9C518B1323E4 /* Pods-stalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stalkTests.release.xcconfig"; sourceTree = "<group>"; };
-		1D317DAAE414CFACAB8FC03451863516 /* libPods-stalkUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stalkUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F94CAB176FBE576A0F116AF0E9B0B24 /* Pods-stalkUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stalkUITests-resources.sh"; sourceTree = "<group>"; };
-		258F6DCFF3E0AE29D8F3142ACB2177EB /* Pods-stalkUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-stalkUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		26C7F3C92B3AF595C3044723FE206666 /* Pods-stalkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stalkUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		40693AEE55B036DE18FE9EB37273CE19 /* Pods-stalkUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stalkUITests-frameworks.sh"; sourceTree = "<group>"; };
-		4A562265A890D2256071F56C3DE85A8C /* Pods-stalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stalk.release.xcconfig"; sourceTree = "<group>"; };
-		575A813777F08A9B574B73F63847261C /* libPods-stalk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stalk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6201AAA10B77993A6C19711442E080CD /* Pods-stalk-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-stalk-acknowledgements.markdown"; sourceTree = "<group>"; };
-		623AEFDAE11C2C39190186D46FD3EFF8 /* Pods-stalkUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-stalkUITests-dummy.m"; sourceTree = "<group>"; };
-		66AD4C1487F37F58FCEC20750B2A298C /* P2PKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = P2PKit.framework; path = iOS/P2PKit.framework; sourceTree = "<group>"; };
-		7D8B369CB2B115EFAA5589119A125A1B /* Pods-stalkUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stalkUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8483B6B6441273B0177F6833A2E13101 /* libPods-stalkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-stalkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00B8AC99040F0676714A99A635382503 /* Pods-stalkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stalkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		035022AEC0F00126D4815E72A409752D /* Pods-stalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stalk.debug.xcconfig"; sourceTree = "<group>"; };
+		0650DD6187412FF1DF7C8AE5F877D045 /* RAMAnimatedTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RAMAnimatedTabBarController.xcconfig; sourceTree = "<group>"; };
+		0CB7B4DF87B9DCF3C09B3346E2C86E83 /* Pods-stalkUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stalkUITests-frameworks.sh"; sourceTree = "<group>"; };
+		0F609C7E9FF48A0B1A2DA27C4796FC78 /* Pods-stalkUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-stalkUITests-umbrella.h"; sourceTree = "<group>"; };
+		132B8EFF2FE27F199202BD769BFBD49C /* Pods-stalk-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stalk-frameworks.sh"; sourceTree = "<group>"; };
+		18EB3825449A4DD35D02D88481595B5B /* Pods_stalkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stalkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EFB8FE9AB513D15914C6D5F69039584 /* Pods-stalkUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stalkUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2004766C1E743A94AD82C8EB706530E4 /* Pods-stalkTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-stalkTests-umbrella.h"; sourceTree = "<group>"; };
+		23821366957E0D9C734452CF4D16503D /* Pods-stalkTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stalkTests-frameworks.sh"; sourceTree = "<group>"; };
+		2525788B2D575B69486FFCA84AB9829B /* Pods-stalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stalk.release.xcconfig"; sourceTree = "<group>"; };
+		2AA07DA446C044A080E573B07BCFEB31 /* RAMAnimatedTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RAMAnimatedTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		2B2C9FCE11A35B4CF2BF966B2AC84837 /* Pods-stalk-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stalk-acknowledgements.plist"; sourceTree = "<group>"; };
+		2C883A37447A03A2EEC10865DCFA3F42 /* P2PKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = P2PKit.framework; path = iOS/P2PKit.framework; sourceTree = "<group>"; };
+		2CFE81CD6964CB55566922D76C9A51F6 /* RAMBounceAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMBounceAnimation.swift; path = RAMAnimatedTabBarController/Animations/BounceAnimation/RAMBounceAnimation.swift; sourceTree = "<group>"; };
+		31B1867614B444C77B09CD295B11E6A4 /* Pods-stalkUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-stalkUITests-dummy.m"; sourceTree = "<group>"; };
+		38ACD865B08743CFD6C06F60923A8BAF /* Pods-stalkTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stalkTests-resources.sh"; sourceTree = "<group>"; };
+		3AC36CC5B730A2EFAA52E4CB4AE51781 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
+		3CC5417FF073BDA280544AAE66339CB2 /* Pods-stalkUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stalkUITests-resources.sh"; sourceTree = "<group>"; };
+		4812D5F18D5196E44FE3C55D20F08F30 /* RAMAnimatedTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RAMAnimatedTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D59995B58985C406A2EF0CD843DD3D7 /* RAMFumeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMFumeAnimation.swift; path = RAMAnimatedTabBarController/Animations/FumeAnimation/RAMFumeAnimation.swift; sourceTree = "<group>"; };
+		564A411E55F105C1CCD4097484F32AEF /* Pods-stalkUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-stalkUITests.modulemap"; sourceTree = "<group>"; };
+		58ED0B769EF124EFAFD100069F4FBFD7 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		5C3F715FD367AFDCA61D495C9A058639 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		621726F44F0DE393E96649A52C18A053 /* Pods-stalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stalkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		69B5F815722AFC62D8A4B39F28BACB3A /* Pods-stalkTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-stalkTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6D02C7CBDDBF0C892718355967A6FD5E /* Pods-stalkTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-stalkTests-dummy.m"; sourceTree = "<group>"; };
+		6DA80B7A2E70DB018D116C40C8015EFB /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		72DB2F07C020057A9417A66FE9F1B80B /* Pods_stalkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stalkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B74BD8D3A0D9D2ADD18D10E689758A4 /* RAMAnimatedTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RAMAnimatedTabBarController-umbrella.h"; sourceTree = "<group>"; };
+		7B8CF9ED24246ED9484056456D7771ED /* RAMFrameItemAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMFrameItemAnimation.swift; path = RAMAnimatedTabBarController/Animations/FrameAnimation/RAMFrameItemAnimation.swift; sourceTree = "<group>"; };
+		7D78D9EB461FC9798D58D4DA07528C25 /* RAMAnimatedTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RAMAnimatedTabBarController-dummy.m"; sourceTree = "<group>"; };
+		7E8BCE31A9C57DB58EA67E38DDE73F61 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		863E0183CFD7776605C60841999B09DC /* Pods-stalk-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-stalk-acknowledgements.markdown"; sourceTree = "<group>"; };
+		88948B833EE13F227DC139A48C51AA84 /* RAMAnimatedTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RAMAnimatedTabBarController.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9B379148A60DABF3C0ED3FEA6097406E /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
-		9CDBFDA651DD6E10C694CC5B6234C638 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		9DF155810248FC4DAC937BF676693B6F /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
-		A7C9F7B7A3969A81CC10E40FD261B05C /* Pods-stalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stalk.debug.xcconfig"; sourceTree = "<group>"; };
-		AAA57B9576B5748A31CBD1644F417B28 /* Pods-stalkTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-stalkTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C7DEBB6F70BF72A1FF4C688E30DA0185 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		CB64CAF2B4D6C35964D9EB4B5AF0ED00 /* Pods-stalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stalkTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CC7494C3AC98C098D691901CF77735C0 /* Pods-stalkTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stalkTests-resources.sh"; sourceTree = "<group>"; };
+		A025AD77EEB38D472D2E6BCF2646E2F3 /* RAMTransitionItemAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMTransitionItemAnimations.swift; path = RAMAnimatedTabBarController/Animations/TransitionAniamtions/RAMTransitionItemAnimations.swift; sourceTree = "<group>"; };
+		A19551F8F7E8FA52C1A123A06BE55241 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B8D82E81AB1A74CEB94D690373AD48 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A22E6EEF0455670B899EB6410AB882E9 /* Pods-stalkTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-stalkTests.modulemap"; sourceTree = "<group>"; };
+		A8A6190DA71582431771FF7D243D2E5E /* Pods-stalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stalkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AA9DD38B94BDA908AA006D5B496227AA /* RAMAnimatedTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMAnimatedTabBarController.swift; path = RAMAnimatedTabBarController/RAMAnimatedTabBarController.swift; sourceTree = "<group>"; };
+		C1865D1F64EFDA89C1F154C439C29838 /* RAMItemAnimationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMItemAnimationProtocol.swift; path = RAMAnimatedTabBarController/RAMItemAnimationProtocol.swift; sourceTree = "<group>"; };
+		C1E6774154FFCDA5FB93501CB8FE71D5 /* Pods-stalkTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stalkTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C3DAC3AE2107AB254E97FECDF23118A2 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		CAD91E9749507A5ABEAA4E130B592B75 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		CB86AEC2425A5B6D074E68348907DDA2 /* Pods-stalk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-stalk.modulemap"; sourceTree = "<group>"; };
+		CE88FA8425E3E1E7A4F098C9EF42BC4C /* Pods-stalkUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-stalkUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D84008A487AF9E240CFDDCA569150636 /* Pods-stalk-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stalk-frameworks.sh"; sourceTree = "<group>"; };
-		E393DC3DDBD5C0E53165483AD47A393F /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
-		E3F16B059040581D398AE25F35B30F3D /* Pods-stalk-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stalk-resources.sh"; sourceTree = "<group>"; };
-		E833C1E75525E286495D05451550A1FC /* Pods-stalkTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-stalkTests-dummy.m"; sourceTree = "<group>"; };
-		E9C3B78AC91400FD3DE225F966A9D56A /* Pods-stalkTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stalkTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		EE5962D29769BE3E3C0A0D98D40D60E0 /* Pods-stalk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-stalk-dummy.m"; sourceTree = "<group>"; };
-		F61296953C599426F0EEA0A93B051B75 /* Pods-stalkTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stalkTests-frameworks.sh"; sourceTree = "<group>"; };
-		F8400E9F5C4477D3D113608B2ABFB5B4 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		CEEDEE7CFC8A34281E77756393B02531 /* Pods-stalk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-stalk-dummy.m"; sourceTree = "<group>"; };
+		D92D80F72EC783273D84AAF8F24C30D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5F9FD223120AC808E96A2386661C23 /* Pods-stalk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-stalk-umbrella.h"; sourceTree = "<group>"; };
+		DC92A8BF73CECF16E1263BE105C1534E /* Pods-stalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stalkTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD0266BB58C20FD243F1336AED1012FA /* RAMRotationAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMRotationAnimation.swift; path = RAMAnimatedTabBarController/Animations/RotationAnimation/RAMRotationAnimation.swift; sourceTree = "<group>"; };
+		E85D5E3DA794E0589C88BED668CDBA24 /* RAMBadge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMBadge.swift; path = RAMAnimatedTabBarController/RAMBadge/RAMBadge.swift; sourceTree = "<group>"; };
+		F4B125A75C8B0488EA580E47B7F3EB45 /* Pods_stalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D1FB096BFAD833A7B8E079B033DC7C /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		FE7E051B4C5EFE0EBDB8B315ACED5125 /* Pods-stalk-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stalk-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		36BD12CAC005275E42C2E55C023F664D /* Frameworks */ = {
+		07B79FE3BBC92418D006EE5121C08834 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43E11073083FFB27472C290D5F1B5856 /* Foundation.framework in Frameworks */,
+				B314366DC093308392578DEC1F3AC5D6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF4C28D8C02BC2AAF9C9C6641365A137 /* Frameworks */ = {
+		534AAEC59C821EAFED9B0D272A253BF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E2820BC8E6DEC5FC0360E741D3BB8ED /* Foundation.framework in Frameworks */,
+				EC0677FF73AD582256D033BD4190CE72 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D43733DFFCF96D131AD6848110DD00D2 /* Frameworks */ = {
+		8E88AA2A5FEA9868C227DD8ACE3A1CF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCFA4527F76050442244017FA8C5C1F5 /* Foundation.framework in Frameworks */,
+				314C31EDA9CE4C8AFEA67564320CEAE4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0959B3C0B6B5497E30CBCF3C3CCB32A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E42D5FB4D202BA3A7CED18C55DB97AFB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EE954A009BEA9F35A7D30D250053DFD /* Frameworks */ = {
+		314AC16D236181A896E1C90EBC6568BA /* GoogleSymbolUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				02A8B3248DD98D249D572D00F31B7F83 /* GoogleSymbolUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		14F74867A36E174B8DFFAEFE39B29220 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				575A813777F08A9B574B73F63847261C /* libPods-stalk.a */,
-				8483B6B6441273B0177F6833A2E13101 /* libPods-stalkTests.a */,
-				1D317DAAE414CFACAB8FC03451863516 /* libPods-stalkUITests.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		167EA70E3FAEC36E7F7FF1E6FD62503D /* p2pkit */ = {
-			isa = PBXGroup;
-			children = (
-				90A6A2235D31F6EA38D17C0ACD02B009 /* Frameworks */,
-			);
-			path = p2pkit;
-			sourceTree = "<group>";
-		};
-		2A4AAF5BCBA1C94FFD76DBDCCCDC8DE3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F8400E9F5C4477D3D113608B2ABFB5B4 /* GoogleInterchangeUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2C705915B6EEBF2FDCBD28847B7876B2 /* GoogleInterchangeUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				2A4AAF5BCBA1C94FFD76DBDCCCDC8DE3 /* Frameworks */,
-			);
-			path = GoogleInterchangeUtilities;
-			sourceTree = "<group>";
-		};
-		2EE7F5682AC8A3C5CD38DB37EABB10A0 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5ED87764F01E32ACE05F147B6A9B1C28 /* Pods-stalk */,
-				972BD820D765C14C518B263625DDFE1E /* Pods-stalkTests */,
-				73B6F64A935F23AF8C4A681D6D9ABB05 /* Pods-stalkUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		3D640C10CD8FD1B493FEC7B4D48456C9 /* GoogleSymbolUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				0EE954A009BEA9F35A7D30D250053DFD /* Frameworks */,
+				9E03AFD62B04B759EAA6D9DBE3B79654 /* Frameworks */,
 			);
 			path = GoogleSymbolUtilities;
 			sourceTree = "<group>";
@@ -148,58 +152,105 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		523C38054078AFDF01BBEFF1B34D3E10 /* Analytics */ = {
+		46E55C708A4A0C3699DD67F27D72924C /* Pods-stalkUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9B379148A60DABF3C0ED3FEA6097406E /* Firebase.h */,
+				5C3F715FD367AFDCA61D495C9A058639 /* Info.plist */,
+				564A411E55F105C1CCD4097484F32AEF /* Pods-stalkUITests.modulemap */,
+				CE88FA8425E3E1E7A4F098C9EF42BC4C /* Pods-stalkUITests-acknowledgements.markdown */,
+				1EFB8FE9AB513D15914C6D5F69039584 /* Pods-stalkUITests-acknowledgements.plist */,
+				31B1867614B444C77B09CD295B11E6A4 /* Pods-stalkUITests-dummy.m */,
+				0CB7B4DF87B9DCF3C09B3346E2C86E83 /* Pods-stalkUITests-frameworks.sh */,
+				3CC5417FF073BDA280544AAE66339CB2 /* Pods-stalkUITests-resources.sh */,
+				0F609C7E9FF48A0B1A2DA27C4796FC78 /* Pods-stalkUITests-umbrella.h */,
+				00B8AC99040F0676714A99A635382503 /* Pods-stalkUITests.debug.xcconfig */,
+				A8A6190DA71582431771FF7D243D2E5E /* Pods-stalkUITests.release.xcconfig */,
+			);
+			name = "Pods-stalkUITests";
+			path = "Target Support Files/Pods-stalkUITests";
+			sourceTree = "<group>";
+		};
+		49505A6E50004F8BB13D573DC731242A /* Pods-stalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1B8D82E81AB1A74CEB94D690373AD48 /* Info.plist */,
+				A22E6EEF0455670B899EB6410AB882E9 /* Pods-stalkTests.modulemap */,
+				69B5F815722AFC62D8A4B39F28BACB3A /* Pods-stalkTests-acknowledgements.markdown */,
+				C1E6774154FFCDA5FB93501CB8FE71D5 /* Pods-stalkTests-acknowledgements.plist */,
+				6D02C7CBDDBF0C892718355967A6FD5E /* Pods-stalkTests-dummy.m */,
+				23821366957E0D9C734452CF4D16503D /* Pods-stalkTests-frameworks.sh */,
+				38ACD865B08743CFD6C06F60923A8BAF /* Pods-stalkTests-resources.sh */,
+				2004766C1E743A94AD82C8EB706530E4 /* Pods-stalkTests-umbrella.h */,
+				621726F44F0DE393E96649A52C18A053 /* Pods-stalkTests.debug.xcconfig */,
+				DC92A8BF73CECF16E1263BE105C1534E /* Pods-stalkTests.release.xcconfig */,
+			);
+			name = "Pods-stalkTests";
+			path = "Target Support Files/Pods-stalkTests";
+			sourceTree = "<group>";
+		};
+		4CBACC6C007180E6398FA43F41324710 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5D1FB096BFAD833A7B8E079B033DC7C /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5197514600AB2A95F41E7D9DE744B2EC /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				63BBB30911B33B0F81702D9BD0D22773 /* Analytics */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		5A1BE51F2C65CE3F5D66CF572C1D6777 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4B125A75C8B0488EA580E47B7F3EB45 /* Pods_stalk.framework */,
+				18EB3825449A4DD35D02D88481595B5B /* Pods_stalkTests.framework */,
+				72DB2F07C020057A9417A66FE9F1B80B /* Pods_stalkUITests.framework */,
+				4812D5F18D5196E44FE3C55D20F08F30 /* RAMAnimatedTabBarController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E4E161B810C84F920D6D26CD0835C49 /* p2pkit */ = {
+			isa = PBXGroup;
+			children = (
+				BAD45E5D8ECD937F8A452ACB3501C252 /* Frameworks */,
+			);
+			path = p2pkit;
+			sourceTree = "<group>";
+		};
+		63BBB30911B33B0F81702D9BD0D22773 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				3AC36CC5B730A2EFAA52E4CB4AE51781 /* Firebase.h */,
 			);
 			name = Analytics;
 			sourceTree = "<group>";
 		};
-		5B12882C4F2C8FB3CE6B001C34978643 /* Frameworks */ = {
+		676372BA85DA6BC69D88CAC25DC4BE2F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E393DC3DDBD5C0E53165483AD47A393F /* GoogleUtilities.framework */,
+				A19551F8F7E8FA52C1A123A06BE55241 /* Info.plist */,
+				88948B833EE13F227DC139A48C51AA84 /* RAMAnimatedTabBarController.modulemap */,
+				0650DD6187412FF1DF7C8AE5F877D045 /* RAMAnimatedTabBarController.xcconfig */,
+				7D78D9EB461FC9798D58D4DA07528C25 /* RAMAnimatedTabBarController-dummy.m */,
+				2AA07DA446C044A080E573B07BCFEB31 /* RAMAnimatedTabBarController-prefix.pch */,
+				7B74BD8D3A0D9D2ADD18D10E689758A4 /* RAMAnimatedTabBarController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RAMAnimatedTabBarController";
+			sourceTree = "<group>";
+		};
+		6A9306E1300CB33D5ADCF46CD04FD1BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E8BCE31A9C57DB58EA67E38DDE73F61 /* FirebaseInstanceID.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5ED87764F01E32ACE05F147B6A9B1C28 /* Pods-stalk */ = {
-			isa = PBXGroup;
-			children = (
-				6201AAA10B77993A6C19711442E080CD /* Pods-stalk-acknowledgements.markdown */,
-				00597391660DA2318A827F7DC94FC808 /* Pods-stalk-acknowledgements.plist */,
-				EE5962D29769BE3E3C0A0D98D40D60E0 /* Pods-stalk-dummy.m */,
-				D84008A487AF9E240CFDDCA569150636 /* Pods-stalk-frameworks.sh */,
-				E3F16B059040581D398AE25F35B30F3D /* Pods-stalk-resources.sh */,
-				A7C9F7B7A3969A81CC10E40FD261B05C /* Pods-stalk.debug.xcconfig */,
-				4A562265A890D2256071F56C3DE85A8C /* Pods-stalk.release.xcconfig */,
-			);
-			name = "Pods-stalk";
-			path = "Target Support Files/Pods-stalk";
-			sourceTree = "<group>";
-		};
-		6E655BB34BAF8E4FAD0D98ABE11B600C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9CDBFDA651DD6E10C694CC5B6234C638 /* FirebaseAnalytics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		73B6F64A935F23AF8C4A681D6D9ABB05 /* Pods-stalkUITests */ = {
-			isa = PBXGroup;
-			children = (
-				258F6DCFF3E0AE29D8F3142ACB2177EB /* Pods-stalkUITests-acknowledgements.markdown */,
-				7D8B369CB2B115EFAA5589119A125A1B /* Pods-stalkUITests-acknowledgements.plist */,
-				623AEFDAE11C2C39190186D46FD3EFF8 /* Pods-stalkUITests-dummy.m */,
-				40693AEE55B036DE18FE9EB37273CE19 /* Pods-stalkUITests-frameworks.sh */,
-				1F94CAB176FBE576A0F116AF0E9B0B24 /* Pods-stalkUITests-resources.sh */,
-				26C7F3C92B3AF595C3044723FE206666 /* Pods-stalkUITests.debug.xcconfig */,
-				0726BA9B00401CE6D7AC1387D9199B76 /* Pods-stalkUITests.release.xcconfig */,
-			);
-			name = "Pods-stalkUITests";
-			path = "Target Support Files/Pods-stalkUITests";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -207,49 +258,67 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				E6C63C204C19D2E99C7B8679BBDE87E6 /* Pods */,
-				14F74867A36E174B8DFFAEFE39B29220 /* Products */,
-				2EE7F5682AC8A3C5CD38DB37EABB10A0 /* Targets Support Files */,
+				9E9CF6DFC57113408C7F74775D2530AF /* Pods */,
+				5A1BE51F2C65CE3F5D66CF572C1D6777 /* Products */,
+				F70A0A6716DFCA4C512BB2878202C173 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		80CAE6939A1885616F51F4F66633FF1A /* Frameworks */ = {
+		846032D8E008B2DBD5E55AE89EA0AE4A /* Pods-stalk */ = {
 			isa = PBXGroup;
 			children = (
-				C7DEBB6F70BF72A1FF4C688E30DA0185 /* FirebaseInstanceID.framework */,
+				D92D80F72EC783273D84AAF8F24C30D2 /* Info.plist */,
+				CB86AEC2425A5B6D074E68348907DDA2 /* Pods-stalk.modulemap */,
+				863E0183CFD7776605C60841999B09DC /* Pods-stalk-acknowledgements.markdown */,
+				2B2C9FCE11A35B4CF2BF966B2AC84837 /* Pods-stalk-acknowledgements.plist */,
+				CEEDEE7CFC8A34281E77756393B02531 /* Pods-stalk-dummy.m */,
+				132B8EFF2FE27F199202BD769BFBD49C /* Pods-stalk-frameworks.sh */,
+				FE7E051B4C5EFE0EBDB8B315ACED5125 /* Pods-stalk-resources.sh */,
+				DC5F9FD223120AC808E96A2386661C23 /* Pods-stalk-umbrella.h */,
+				035022AEC0F00126D4815E72A409752D /* Pods-stalk.debug.xcconfig */,
+				2525788B2D575B69486FFCA84AB9829B /* Pods-stalk.release.xcconfig */,
+			);
+			name = "Pods-stalk";
+			path = "Target Support Files/Pods-stalk";
+			sourceTree = "<group>";
+		};
+		9E03AFD62B04B759EAA6D9DBE3B79654 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DA80B7A2E70DB018D116C40C8015EFB /* GoogleSymbolUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		90A6A2235D31F6EA38D17C0ACD02B009 /* Frameworks */ = {
+		9E9CF6DFC57113408C7F74775D2530AF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				66AD4C1487F37F58FCEC20750B2A298C /* P2PKit.framework */,
+				5197514600AB2A95F41E7D9DE744B2EC /* Firebase */,
+				D81DC2B507B5EB1B5287239FA8CF08DE /* FirebaseAnalytics */,
+				EE5BD8A08E2D6664B513A76F0F038507 /* FirebaseInstanceID */,
+				D7CABA1924EFC1EF6E9513012CB82CB1 /* GoogleInterchangeUtilities */,
+				314AC16D236181A896E1C90EBC6568BA /* GoogleSymbolUtilities */,
+				BEF6A6E6149D02608DEF5F9FC22F12B2 /* GoogleUtilities */,
+				5E4E161B810C84F920D6D26CD0835C49 /* p2pkit */,
+				F646F814CCA7CFD7F9699230EDC9ED08 /* RAMAnimatedTabBarController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AFB0BBA80E5DD0E6915D9348FB04D182 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3DAC3AE2107AB254E97FECDF23118A2 /* GoogleInterchangeUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		972BD820D765C14C518B263625DDFE1E /* Pods-stalkTests */ = {
+		BAD45E5D8ECD937F8A452ACB3501C252 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AAA57B9576B5748A31CBD1644F417B28 /* Pods-stalkTests-acknowledgements.markdown */,
-				E9C3B78AC91400FD3DE225F966A9D56A /* Pods-stalkTests-acknowledgements.plist */,
-				E833C1E75525E286495D05451550A1FC /* Pods-stalkTests-dummy.m */,
-				F61296953C599426F0EEA0A93B051B75 /* Pods-stalkTests-frameworks.sh */,
-				CC7494C3AC98C098D691901CF77735C0 /* Pods-stalkTests-resources.sh */,
-				CB64CAF2B4D6C35964D9EB4B5AF0ED00 /* Pods-stalkTests.debug.xcconfig */,
-				0EC6BDA479621E7120CF9C518B1323E4 /* Pods-stalkTests.release.xcconfig */,
+				2C883A37447A03A2EEC10865DCFA3F42 /* P2PKit.framework */,
 			);
-			name = "Pods-stalkTests";
-			path = "Target Support Files/Pods-stalkTests";
-			sourceTree = "<group>";
-		};
-		9C601DB71B6F6D14524B4C7CE36B97A8 /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				523C38054078AFDF01BBEFF1B34D3E10 /* Analytics */,
-			);
-			path = Firebase;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -260,70 +329,153 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C81C6F383C8B0C9D3A0B248CF97B1446 /* FirebaseAnalytics */ = {
+		BEF6A6E6149D02608DEF5F9FC22F12B2 /* GoogleUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				6E655BB34BAF8E4FAD0D98ABE11B600C /* Frameworks */,
-			);
-			path = FirebaseAnalytics;
-			sourceTree = "<group>";
-		};
-		E6C63C204C19D2E99C7B8679BBDE87E6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9C601DB71B6F6D14524B4C7CE36B97A8 /* Firebase */,
-				C81C6F383C8B0C9D3A0B248CF97B1446 /* FirebaseAnalytics */,
-				E802220AC2392513837F0E3FB11F4D76 /* FirebaseInstanceID */,
-				2C705915B6EEBF2FDCBD28847B7876B2 /* GoogleInterchangeUtilities */,
-				3D640C10CD8FD1B493FEC7B4D48456C9 /* GoogleSymbolUtilities */,
-				F820EC0FCE84E15DA1D82056A394ECF7 /* GoogleUtilities */,
-				167EA70E3FAEC36E7F7FF1E6FD62503D /* p2pkit */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E802220AC2392513837F0E3FB11F4D76 /* FirebaseInstanceID */ = {
-			isa = PBXGroup;
-			children = (
-				9DF155810248FC4DAC937BF676693B6F /* FIRInstanceID.h */,
-				80CAE6939A1885616F51F4F66633FF1A /* Frameworks */,
-			);
-			path = FirebaseInstanceID;
-			sourceTree = "<group>";
-		};
-		F820EC0FCE84E15DA1D82056A394ECF7 /* GoogleUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				5B12882C4F2C8FB3CE6B001C34978643 /* Frameworks */,
+				4CBACC6C007180E6398FA43F41324710 /* Frameworks */,
 			);
 			path = GoogleUtilities;
 			sourceTree = "<group>";
 		};
+		D7CABA1924EFC1EF6E9513012CB82CB1 /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				AFB0BBA80E5DD0E6915D9348FB04D182 /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		D81DC2B507B5EB1B5287239FA8CF08DE /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				E32E70694EEEDB789F22D7CCABC4FD7B /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		E32E70694EEEDB789F22D7CCABC4FD7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAD91E9749507A5ABEAA4E130B592B75 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE5BD8A08E2D6664B513A76F0F038507 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				58ED0B769EF124EFAFD100069F4FBFD7 /* FIRInstanceID.h */,
+				6A9306E1300CB33D5ADCF46CD04FD1BD /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		F646F814CCA7CFD7F9699230EDC9ED08 /* RAMAnimatedTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				AA9DD38B94BDA908AA006D5B496227AA /* RAMAnimatedTabBarController.swift */,
+				E85D5E3DA794E0589C88BED668CDBA24 /* RAMBadge.swift */,
+				2CFE81CD6964CB55566922D76C9A51F6 /* RAMBounceAnimation.swift */,
+				7B8CF9ED24246ED9484056456D7771ED /* RAMFrameItemAnimation.swift */,
+				4D59995B58985C406A2EF0CD843DD3D7 /* RAMFumeAnimation.swift */,
+				C1865D1F64EFDA89C1F154C439C29838 /* RAMItemAnimationProtocol.swift */,
+				DD0266BB58C20FD243F1336AED1012FA /* RAMRotationAnimation.swift */,
+				A025AD77EEB38D472D2E6BCF2646E2F3 /* RAMTransitionItemAnimations.swift */,
+				676372BA85DA6BC69D88CAC25DC4BE2F /* Support Files */,
+			);
+			path = RAMAnimatedTabBarController;
+			sourceTree = "<group>";
+		};
+		F70A0A6716DFCA4C512BB2878202C173 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				846032D8E008B2DBD5E55AE89EA0AE4A /* Pods-stalk */,
+				49505A6E50004F8BB13D573DC731242A /* Pods-stalkTests */,
+				46E55C708A4A0C3699DD67F27D72924C /* Pods-stalkUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B490BA4761C74F2B8DC41ABDD01E0476 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A9FCC53388FAFF82FDFAE9F443DC5D3 /* RAMAnimatedTabBarController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F73D0BF254548E114212C68723E12C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC929D2F91F0F590520B2BBA6FB5B7E0 /* Pods-stalkUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B660B315DC2A85CFEB07FBECDB7EEC2E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DDB740B75F4A9575FF8A76C1F348B33 /* Pods-stalk-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA0E249D0DED3E44F84087CDE0CBE53F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				053028652BBE3104D1FCEFFB3285FF61 /* Pods-stalkTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		3BFAA5BBAFF9075397EFBDF4B298452E /* Pods-stalkUITests */ = {
+		21BD3ACB8A4C45DC40F9FD3A0FA7145B /* Pods-stalk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31AB6DE5F08CC9204CA1C3ABF53DF905 /* Build configuration list for PBXNativeTarget "Pods-stalkUITests" */;
+			buildConfigurationList = F70FD21DEE1B6DEE6BD57D0B6DE2CBF5 /* Build configuration list for PBXNativeTarget "Pods-stalk" */;
 			buildPhases = (
-				C42A0D80DEADF92304966FCBF2996550 /* Sources */,
-				CF4C28D8C02BC2AAF9C9C6641365A137 /* Frameworks */,
+				CE055B2674CC8C6EB5670A3BC3077EE4 /* Sources */,
+				534AAEC59C821EAFED9B0D272A253BF6 /* Frameworks */,
+				B660B315DC2A85CFEB07FBECDB7EEC2E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD2C368447793494A1A2FD72432F858D /* PBXTargetDependency */,
+			);
+			name = "Pods-stalk";
+			productName = "Pods-stalk";
+			productReference = F4B125A75C8B0488EA580E47B7F3EB45 /* Pods_stalk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4E97BD8131324B31FF784097286D18AF /* RAMAnimatedTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB766FD6E7B153F5FED470C6E4945E80 /* Build configuration list for PBXNativeTarget "RAMAnimatedTabBarController" */;
+			buildPhases = (
+				67628AAFABED9DDF7F4D7158231A1186 /* Sources */,
+				8E88AA2A5FEA9868C227DD8ACE3A1CF1 /* Frameworks */,
+				B490BA4761C74F2B8DC41ABDD01E0476 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-stalkUITests";
-			productName = "Pods-stalkUITests";
-			productReference = 1D317DAAE414CFACAB8FC03451863516 /* libPods-stalkUITests.a */;
-			productType = "com.apple.product-type.library.static";
+			name = RAMAnimatedTabBarController;
+			productName = RAMAnimatedTabBarController;
+			productReference = 4812D5F18D5196E44FE3C55D20F08F30 /* RAMAnimatedTabBarController.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		AC912AAF9032BEAD79932C32CEA62BF4 /* Pods-stalkTests */ = {
+		9B3C19EAE84853A2415EF59C4E5AF288 /* Pods-stalkTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81EDEE85441A5BC931F90372B1163174 /* Build configuration list for PBXNativeTarget "Pods-stalkTests" */;
+			buildConfigurationList = 4E4DA9B72AFD86EE367AFED0E7EE3F7F /* Build configuration list for PBXNativeTarget "Pods-stalkTests" */;
 			buildPhases = (
-				C409D54186DB40CC9246CD8697FA7772 /* Sources */,
-				36BD12CAC005275E42C2E55C023F664D /* Frameworks */,
+				62D65A811F7C8CA5F31BDAFDDCCB92F8 /* Sources */,
+				07B79FE3BBC92418D006EE5121C08834 /* Frameworks */,
+				FA0E249D0DED3E44F84087CDE0CBE53F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -331,24 +483,25 @@
 			);
 			name = "Pods-stalkTests";
 			productName = "Pods-stalkTests";
-			productReference = 8483B6B6441273B0177F6833A2E13101 /* libPods-stalkTests.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 18EB3825449A4DD35D02D88481595B5B /* Pods_stalkTests.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		E0C82800FB97EFB9F805C60AA4D3E55F /* Pods-stalk */ = {
+		FCD4B8EC70071F3E462CD48B894C93C8 /* Pods-stalkUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3660187CCBA238A9B5438E7F15E4F865 /* Build configuration list for PBXNativeTarget "Pods-stalk" */;
+			buildConfigurationList = 90B05CF2682FB14BB0760C2D8A311560 /* Build configuration list for PBXNativeTarget "Pods-stalkUITests" */;
 			buildPhases = (
-				E820F96658C3AB44E1F27770F8A81C24 /* Sources */,
-				D43733DFFCF96D131AD6848110DD00D2 /* Frameworks */,
+				5C10EFFCBD9CA3E2F8BB43C00A7BAE07 /* Sources */,
+				E0959B3C0B6B5497E30CBCF3C3CCB32A /* Frameworks */,
+				B5F73D0BF254548E114212C68723E12C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-stalk";
-			productName = "Pods-stalk";
-			productReference = 575A813777F08A9B574B73F63847261C /* libPods-stalk.a */;
-			productType = "com.apple.product-type.library.static";
+			name = "Pods-stalkUITests";
+			productName = "Pods-stalkUITests";
+			productReference = 72DB2F07C020057A9417A66FE9F1B80B /* Pods_stalkUITests.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -367,87 +520,71 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 14F74867A36E174B8DFFAEFE39B29220 /* Products */;
+			productRefGroup = 5A1BE51F2C65CE3F5D66CF572C1D6777 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E0C82800FB97EFB9F805C60AA4D3E55F /* Pods-stalk */,
-				AC912AAF9032BEAD79932C32CEA62BF4 /* Pods-stalkTests */,
-				3BFAA5BBAFF9075397EFBDF4B298452E /* Pods-stalkUITests */,
+				21BD3ACB8A4C45DC40F9FD3A0FA7145B /* Pods-stalk */,
+				9B3C19EAE84853A2415EF59C4E5AF288 /* Pods-stalkTests */,
+				FCD4B8EC70071F3E462CD48B894C93C8 /* Pods-stalkUITests */,
+				4E97BD8131324B31FF784097286D18AF /* RAMAnimatedTabBarController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C409D54186DB40CC9246CD8697FA7772 /* Sources */ = {
+		5C10EFFCBD9CA3E2F8BB43C00A7BAE07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21A1CD796C89F181AAC1DC68AE4DAC90 /* Pods-stalkTests-dummy.m in Sources */,
+				60279D6A2D13C7602AF2278E10718874 /* Pods-stalkUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C42A0D80DEADF92304966FCBF2996550 /* Sources */ = {
+		62D65A811F7C8CA5F31BDAFDDCCB92F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DFCB20A28FA67BD3693B2448E77847F /* Pods-stalkUITests-dummy.m in Sources */,
+				CA82CC764DE26C022F2BF4AD9A54A8F6 /* Pods-stalkTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E820F96658C3AB44E1F27770F8A81C24 /* Sources */ = {
+		67628AAFABED9DDF7F4D7158231A1186 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EBEE5F0EC8044DF3136B49C40AF314D /* Pods-stalk-dummy.m in Sources */,
+				9E5FF87A4791B8F8355ABC605C5F03EB /* RAMAnimatedTabBarController-dummy.m in Sources */,
+				0B036DC5943A68AA30BA00791E317D5A /* RAMAnimatedTabBarController.swift in Sources */,
+				4ECC67005D8281FC802FBAB94D1D3C2A /* RAMBadge.swift in Sources */,
+				8E3B043868E2E54278342E672B50360D /* RAMBounceAnimation.swift in Sources */,
+				2A313943497821CFBE5052D7B3F04F06 /* RAMFrameItemAnimation.swift in Sources */,
+				1DF0DB09C60EF3C477D3EFC9ADD28A4A /* RAMFumeAnimation.swift in Sources */,
+				EA3E3F73A7747F59CDE12AA063E9E7FD /* RAMItemAnimationProtocol.swift in Sources */,
+				E12B093B95CBE2516EA050729E3277F0 /* RAMRotationAnimation.swift in Sources */,
+				45FB39278D06C2B647BAAC48781F4C3A /* RAMTransitionItemAnimations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE055B2674CC8C6EB5670A3BC3077EE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66853B91810681EC6238E8664D7F03EF /* Pods-stalk-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AD2C368447793494A1A2FD72432F858D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RAMAnimatedTabBarController;
+			target = 4E97BD8131324B31FF784097286D18AF /* RAMAnimatedTabBarController */;
+			targetProxy = BB9F6F0769453303EC36A6B979EA8C1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		257F3DDC7F8509E5EA93B9D03046DE48 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB64CAF2B4D6C35964D9EB4B5AF0ED00 /* Pods-stalkTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		37D5EBFEA4E0BB12B15581505B78E2CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26C7F3C92B3AF595C3044723FE206666 /* Pods-stalkUITests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -486,26 +623,68 @@
 			};
 			name = Release;
 		};
-		5B983E400F86B231B7483B1FD628751B /* Release */ = {
+		53F30CD3C8B4706F4927295F311EA746 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0726BA9B00401CE6D7AC1387D9199B76 /* Pods-stalkUITests.release.xcconfig */;
+			baseConfigurationReference = 2525788B2D575B69486FFCA84AB9829B /* Pods-stalk.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-stalk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-stalk/Pods-stalk.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pods_stalk;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		59591676DC23323C8A14BF9A7287C199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0650DD6187412FF1DF7C8AE5F877D045 /* RAMAnimatedTabBarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RAMAnimatedTabBarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RAMAnimatedTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -549,66 +728,198 @@
 			};
 			name = Debug;
 		};
-		633B8C319A7A8A167F3CE44A7990B08C /* Debug */ = {
+		63C8A681E7670B1C2F87AF42D1E8AFA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7C9F7B7A3969A81CC10E40FD261B05C /* Pods-stalk.debug.xcconfig */;
+			baseConfigurationReference = 035022AEC0F00126D4815E72A409752D /* Pods-stalk.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-stalk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-stalk/Pods-stalk.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pods_stalk;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		F7A987605E200F468B6B5D210A8B6755 /* Release */ = {
+		AF4C07766C3DDDB6B87F208A1FAEA1A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A562265A890D2256071F56C3DE85A8C /* Pods-stalk.release.xcconfig */;
+			baseConfigurationReference = 0650DD6187412FF1DF7C8AE5F877D045 /* RAMAnimatedTabBarController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
+				GCC_PREFIX_HEADER = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RAMAnimatedTabBarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RAMAnimatedTabBarController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		FA4AFC77E1BD78EEFC8D3949727B71C8 /* Release */ = {
+		B52C21E745A9675B758AA0A272D295CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0EC6BDA479621E7120CF9C518B1323E4 /* Pods-stalkTests.release.xcconfig */;
+			baseConfigurationReference = 621726F44F0DE393E96649A52C18A053 /* Pods-stalkTests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-stalkTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-stalkTests/Pods-stalkTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_stalkTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CDC245FBB8671A3E9A8F66F6DCB5F923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B8AC99040F0676714A99A635382503 /* Pods-stalkUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-stalkUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-stalkUITests/Pods-stalkUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_stalkUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D654C949A8895FAFB1C1175A3840FA64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8A6190DA71582431771FF7D243D2E5E /* Pods-stalkUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-stalkUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-stalkUITests/Pods-stalkUITests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pods_stalkUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1913C9980812B10AD6262B06E049552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC92A8BF73CECF16E1263BE105C1534E /* Pods-stalkTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-stalkTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-stalkTests/Pods-stalkTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_stalkTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -624,29 +935,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		31AB6DE5F08CC9204CA1C3ABF53DF905 /* Build configuration list for PBXNativeTarget "Pods-stalkUITests" */ = {
+		4E4DA9B72AFD86EE367AFED0E7EE3F7F /* Build configuration list for PBXNativeTarget "Pods-stalkTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				37D5EBFEA4E0BB12B15581505B78E2CA /* Debug */,
-				5B983E400F86B231B7483B1FD628751B /* Release */,
+				B52C21E745A9675B758AA0A272D295CF /* Debug */,
+				F1913C9980812B10AD6262B06E049552 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3660187CCBA238A9B5438E7F15E4F865 /* Build configuration list for PBXNativeTarget "Pods-stalk" */ = {
+		90B05CF2682FB14BB0760C2D8A311560 /* Build configuration list for PBXNativeTarget "Pods-stalkUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				633B8C319A7A8A167F3CE44A7990B08C /* Debug */,
-				F7A987605E200F468B6B5D210A8B6755 /* Release */,
+				CDC245FBB8671A3E9A8F66F6DCB5F923 /* Debug */,
+				D654C949A8895FAFB1C1175A3840FA64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81EDEE85441A5BC931F90372B1163174 /* Build configuration list for PBXNativeTarget "Pods-stalkTests" */ = {
+		F70FD21DEE1B6DEE6BD57D0B6DE2CBF5 /* Build configuration list for PBXNativeTarget "Pods-stalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				257F3DDC7F8509E5EA93B9D03046DE48 /* Debug */,
-				FA4AFC77E1BD78EEFC8D3949727B71C8 /* Release */,
+				63C8A681E7670B1C2F87AF42D1E8AFA8 /* Debug */,
+				53F30CD3C8B4706F4927295F311EA746 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB766FD6E7B153F5FED470C6E4945E80 /* Build configuration list for PBXNativeTarget "RAMAnimatedTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59591676DC23323C8A14BF9A7287C199 /* Debug */,
+				AF4C07766C3DDDB6B87F208A1FAEA1A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
