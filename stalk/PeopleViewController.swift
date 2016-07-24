@@ -26,7 +26,6 @@ class PeopleViewController: UIViewController,SonarViewDelegate,SonarViewDataSour
         // Do any additional setup after loading the view, typically from a nib.
         self.sonarView.delegate = self
         self.sonarView.dataSource = self
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -112,6 +111,7 @@ extension PeopleViewController: PPKControllerDelegate{
         NSLog("%@ is here with discovery info: %@", peer.peerID, discoveryInfoString!)
         
         if let dataFromString = peer.discoveryInfo{
+            print(discoveryInfoString)
             let json = JSON(data: dataFromString)
             PeerHelper.addNewPeerToList(Peer(json: json))
         }
