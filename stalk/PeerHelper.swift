@@ -32,6 +32,12 @@ class PeerHelper{
             peerList.append(peer)
         }
     }
+    
+    static func usersToString(arr:[User]) -> String {
+        
+        return JSON(arr.map{$0.toJSON()}).rawString()!
+        
+    }
 }
 
 func ==(left: Peer, right: Peer) -> Bool{
