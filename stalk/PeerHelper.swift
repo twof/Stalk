@@ -21,8 +21,9 @@ class PeerHelper:NSObject, CLLocationManagerDelegate{
     }()
     
     static var ownAccount = {
-        return Peer(name: "Alex", userDescription: "I'm pretty great", location: (PeerHelper().locationManager.location?.coordinate)!)
-    }
+        return Peer(name: "Alex", userDescription: "I'm pretty great", location: (PeerHelper().locationManager.location?.coordinate)!, depth: 0)
+    }()
+    
     static var peerList: [Peer]!
     
     static func addNewPeerToList(newPeer: Peer){

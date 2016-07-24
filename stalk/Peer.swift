@@ -44,28 +44,33 @@ class Peer: PPKPeer {
     var location:CLLocationCoordinate2D
     private var adjacencyListJson: [JSON]!
     var adjacencyList: [User]!
+    var points: Int!
+    var depth: Int!
 
     
     init(json:JSON) {
-        
+        self.points = 0
+        self.depth = json["depth"].intValue
         self.name = json["identification"]["name"].stringValue
         self.userDescription = json["identification"]["description"].stringValue
         self.location = CLLocationCoordinate2D(latitude: json["location"]["longitude"].doubleValue , longitude: json["location"]["latitude"].doubleValue)
         self.adjacencyListJson = json["users"].arrayValue
-        
+        self.adjacencyList.append(User(peerID: PeerHelper.ownAccount.peerID, name: PeerHelper.ownAccount.name, latitude: PeerHelper.ownAccount.getLatitude(), longitude: PeerHelper.ownAccount.getLongitude(), points: PeerHelper.ownAccount.points, depth: PeerHelper.ownAccount.depth))
         for user in adjacencyListJson{
             self.adjacencyList.append(User(peerID: user["peerID"].stringValue, name: user["name"].stringValue, latitude: user["latitude"].doubleValue, longitude: user["longitude"].doubleValue, points: user["points"].intValue, depth: user["depth"].intValue + 1))
         }
+        
         
         super.init()
         self.removeRedundencies()
     }
     
-    init(name: String, userDescription: String, location: CLLocationCoordinate2D) {
+    init(name: String, userDescription: String, location: CLLocationCoordinate2D, depth: Int) {
         self.name = name
         self.userDescription = userDescription
         self.location = location
-        
+        self.depth = depth
+        self.points = 0
         self.adjacencyList = []
     }
     
