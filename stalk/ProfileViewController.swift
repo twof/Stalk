@@ -16,7 +16,8 @@ class ProfileViewController: UIViewController, UITabBarControllerDelegate {
     @IBOutlet weak var profileImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let backItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backItem
         generate()
         self.tabBarController?.delegate = self
         // Do any additional setup after loading the view.
