@@ -13,8 +13,8 @@ class P2PHelper: NSObject, PPKControllerDelegate {
     
     override init(){
         super.init()
-        PPKController.enableWithConfiguration(APP_KEY, observer:self)
-        PPKController.enableProximityRanging()
+//        PPKController.enableWithConfiguration(APP_KEY, observer:self)
+//        PPKController.enableProximityRanging()
     }
     
     static func setNetworkStatus(/*network status*/){

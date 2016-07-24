@@ -11,12 +11,14 @@ import CoreLocation
 import Sonar
 import MapKit
 
-class PeopleViewController: UIViewController,SonarViewDelegate,SonarViewDataSource {
+class PeopleViewController: UIViewController,SonarViewDelegate,SonarViewDataSource,PPKControllerDelegate {
     @IBOutlet weak var sonarView: SonarView!
     private lazy var distanceFormatter: MKDistanceFormatter = MKDistanceFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        PPKController.enableWithConfiguration(APP_KEY, observer:self)
+        PPKController.enableProximityRanging()
         // Do any additional setup after loading the view, typically from a nib.
         
         self.sonarView.delegate = self
@@ -31,14 +33,21 @@ class PeopleViewController: UIViewController,SonarViewDelegate,SonarViewDataSour
     override func viewWillAppear(animated: Bool){
         sonarView.reloadData()
     }
-    
-    @IBAction func reloadData(sender: AnyObject) {
+    @IBAction func refresh(sender: AnyObject) {
         sonarView.reloadData()
     }
+    
+
     func sonarView(sonarView: SonarView, didSelectObjectInWave waveIndex: Int, atIndex: Int) {
         print("Did select item in wave \(waveIndex) at index \(atIndex)")
+        self.performSegueWithIdentifier("toPerson", sender: self)
         
-        
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier=="toPerson"{
+            let vc = segue.destinationViewController as! MapViewController
+            //photo, name, level, location
+        }
     }
     
     func sonarView(sonarView: SonarView, textForWaveAtIndex waveIndex: Int) -> String? {

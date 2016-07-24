@@ -10,13 +10,15 @@ import UIKit
 import QRCodeReaderViewController
 import RAMAnimatedTabBarController
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UITabBarControllerDelegate {
 
     @IBOutlet weak var qrcodeImageView: UIImageView!
     @IBOutlet weak var profileImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         generate()
+        self.tabBarController?.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -59,11 +61,6 @@ class ProfileViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-}
-
-extension ProfileViewController: UITabBarControllerDelegate {
-    
     func tabBarController(tabBarController: UITabBarController, shouldSelectViewController viewController: UIViewController) -> Bool {
         if (viewController is PhotoViewController) {
             print("ya")
@@ -72,7 +69,7 @@ extension ProfileViewController: UITabBarControllerDelegate {
             vcQR.modalPresentationStyle = UIModalPresentationStyle.FormSheet
             vcQR.delegate = self.tabBarController!
             reader.setCompletionWithBlock({ (result:String!) -> () in
-                    print(result)
+                print(result)
             })
             self.tabBarController!.presentViewController(vcQR, animated: true, completion: nil)
             return false
@@ -81,10 +78,8 @@ extension ProfileViewController: UITabBarControllerDelegate {
             return true
         }
     }
-
-    
-    
 }
+
 
 extension UIViewController: QRCodeReaderDelegate {
     

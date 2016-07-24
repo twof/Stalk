@@ -10,7 +10,6 @@
 		65252F47A1E8202EE0822406 /* Pods_stalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77828BA9368B185F34D7569C /* Pods_stalkUITests.framework */; };
 		716381B02FCDE0B4F4816282 /* Pods_stalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D8CB1B521A915B51784FB8 /* Pods_stalkTests.framework */; };
 		976691141D44081B007713F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976691131D44081B007713F0 /* AppDelegate.swift */; };
-		976691161D44081B007713F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976691151D44081B007713F0 /* ViewController.swift */; };
 		976691191D44081B007713F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976691171D44081B007713F0 /* Main.storyboard */; };
 		9766911C1D44081B007713F0 /* stalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9766911A1D44081B007713F0 /* stalk.xcdatamodeld */; };
 		9766911E1D44081B007713F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9766911D1D44081B007713F0 /* Assets.xcassets */; };
@@ -29,10 +28,12 @@
 		BF56A4741D44C55600D9BFFE /* PinLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF56A46F1D44C55600D9BFFE /* PinLocation.swift */; };
 		BF56A4761D44CFBD00D9BFFE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF56A4751D44CFBD00D9BFFE /* ProfileViewController.swift */; };
 		BF56A4781D44D2E900D9BFFE /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF56A4771D44D2E900D9BFFE /* PhotoViewController.swift */; };
+		BF8867F71D45023A00CA01BF /* CapturedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8867F61D45023A00CA01BF /* CapturedTableViewController.swift */; };
 		BFAD42591D44A70600D5B36B /* P2PHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAD42551D44A70600D5B36B /* P2PHelper.swift */; };
 		BFAD425A1D44A70600D5B36B /* Peer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAD42561D44A70600D5B36B /* Peer.swift */; };
 		BFAD425B1D44A70600D5B36B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAD42571D44A70600D5B36B /* Constants.swift */; };
 		BFAD425C1D44A70600D5B36B /* PeerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAD42581D44A70600D5B36B /* PeerHelper.swift */; };
+		BFB0EADD1D4503D400CD4549 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB0EADC1D4503D400CD4549 /* TableViewCell.swift */; };
 		D7D0C32278E6C5CC5379376E /* Pods_stalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932FD6F1D144497A999BDD25 /* Pods_stalk.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +63,6 @@
 		932FD6F1D144497A999BDD25 /* Pods_stalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		976691101D44081B007713F0 /* stalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		976691131D44081B007713F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		976691151D44081B007713F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		976691181D44081B007713F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9766911B1D44081B007713F0 /* stalk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = stalk.xcdatamodel; sourceTree = "<group>"; };
 		9766911D1D44081B007713F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,10 +89,12 @@
 		BF56A46F1D44C55600D9BFFE /* PinLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinLocation.swift; sourceTree = "<group>"; };
 		BF56A4751D44CFBD00D9BFFE /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BF56A4771D44D2E900D9BFFE /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		BF8867F61D45023A00CA01BF /* CapturedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapturedTableViewController.swift; sourceTree = "<group>"; };
 		BFAD42551D44A70600D5B36B /* P2PHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P2PHelper.swift; sourceTree = "<group>"; };
 		BFAD42561D44A70600D5B36B /* Peer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Peer.swift; sourceTree = "<group>"; };
 		BFAD42571D44A70600D5B36B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BFAD42581D44A70600D5B36B /* PeerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerHelper.swift; sourceTree = "<group>"; };
+		BFB0EADC1D4503D400CD4549 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		FF10484F0B8FBA712E54D7A1 /* Pods-stalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stalk/Pods-stalk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,8 +185,9 @@
 				BF56A4751D44CFBD00D9BFFE /* ProfileViewController.swift */,
 				976691131D44081B007713F0 /* AppDelegate.swift */,
 				BF56A4601D44AFB100D9BFFE /* PeopleViewController.swift */,
-				976691151D44081B007713F0 /* ViewController.swift */,
+				BF8867F61D45023A00CA01BF /* CapturedTableViewController.swift */,
 				BF56A45E1D44AE6100D9BFFE /* Keys.swift */,
+				BFB0EADC1D4503D400CD4549 /* TableViewCell.swift */,
 				BF56A4641D44B21000D9BFFE /* cellView.swift */,
 				976691171D44081B007713F0 /* Main.storyboard */,
 				9766911D1D44081B007713F0 /* Assets.xcassets */,
@@ -494,6 +497,7 @@
 				BF56A4691D44B35800D9BFFE /* TestSonarItemView.swift in Sources */,
 				BF56A4721D44C55600D9BFFE /* MVCCoreLocation.swift in Sources */,
 				9766911C1D44081B007713F0 /* stalk.xcdatamodeld in Sources */,
+				BFB0EADD1D4503D400CD4549 /* TableViewCell.swift in Sources */,
 				BF56A45F1D44AE6100D9BFFE /* Keys.swift in Sources */,
 				BF56A4731D44C55600D9BFFE /* MVCMapKit.swift in Sources */,
 				BFAD42591D44A70600D5B36B /* P2PHelper.swift in Sources */,
@@ -502,10 +506,10 @@
 				BFAD425A1D44A70600D5B36B /* Peer.swift in Sources */,
 				BFAD425B1D44A70600D5B36B /* Constants.swift in Sources */,
 				BF56A4781D44D2E900D9BFFE /* PhotoViewController.swift in Sources */,
+				BF8867F71D45023A00CA01BF /* CapturedTableViewController.swift in Sources */,
 				BF56A4611D44AFB100D9BFFE /* PeopleViewController.swift in Sources */,
 				BF56A4701D44C55600D9BFFE /* MapViewController.swift in Sources */,
 				BF56A4651D44B21000D9BFFE /* cellView.swift in Sources */,
-				976691161D44081B007713F0 /* ViewController.swift in Sources */,
 				976691141D44081B007713F0 /* AppDelegate.swift in Sources */,
 				BFAD425C1D44A70600D5B36B /* PeerHelper.swift in Sources */,
 			);
