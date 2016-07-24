@@ -26,6 +26,12 @@ class User{
         self.points = points
         self.depth = depth
     }
+    
+    func toJSON() -> String {
+        
+        return JSON(["peerID":self.peerID, "name":self.name, "latitude":self.latitude, "longitude":self.longitude , "point":self.points, "hop":self.depth]).rawString()!
+        
+    }
 }
 
 class Peer: PPKPeer {
