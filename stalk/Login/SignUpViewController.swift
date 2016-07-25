@@ -16,7 +16,7 @@ class SignUpViewController: UIViewController {
 			{
 				let first = firstNameTextField.text!
 				let last = lastNameTextField.text!
-				PeerHelper.ownAccount.name = first + " " + last
+				PeerHelper.name = first + " " + last
 //				self.showViewController(vc , sender: self)
 				self.performSegueWithIdentifier("Login", sender: self)
 				return

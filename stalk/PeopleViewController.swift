@@ -16,6 +16,37 @@ class PeopleViewController: UIViewController,SonarViewDelegate,SonarViewDataSour
     @IBOutlet weak var sonarView: SonarView!
     private lazy var distanceFormatter: MKDistanceFormatter = MKDistanceFormatter()
     
+    struct AnnounceSegment {
+        var value: String
+        var index: Int
+        
+    }
+    
+    struct AnnounceString {
+        var segments = [AnnounceSegment]()
+        var totalSegments: Int
+        var fullString: String? {
+            var s = ""
+            
+            for a in segments{
+                s += a.value
+            }
+            return s
+            
+        }
+        mutating func addToSegments(segment: AnnounceSegment)
+        {
+            var i = 0
+            for a in segments{
+                if segment.index > a.index {
+                    segments.insert(segment, atIndex: i+1)
+                    return
+                }
+                i += 1
+            }
+        }
+    }
+    var userStrings: [AnnounceString] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
@@ -102,7 +133,7 @@ extension PeopleViewController: PPKControllerDelegate{
         let myDiscoveryInfo = "Hello from Swift!, Hey Justin!".dataUsingEncoding(NSUTF8StringEncoding)
         print(NSString(data: myDiscoveryInfo!, encoding: NSUTF8StringEncoding)!)
         PPKController.startP2PDiscoveryWithDiscoveryInfo(myDiscoveryInfo, stateRestoration: false)
-        P2PHelper.setNetworkStatus(P2PHelper.constructAnnounceString())
+        P2PHelper.constructAnnounceString()
         print(P2PHelper.anounceStringHolder)
     }
     
@@ -112,8 +143,27 @@ extension PeopleViewController: PPKControllerDelegate{
         
         if let dataFromString = peer.discoveryInfo{
             print(discoveryInfoString)
-            let json = JSON(data: dataFromString)
-            PeerHelper.addNewPeerToList(Peer(json: json))
+            let newString = discoveryInfoString?.substringFromIndex(2)
+            let val = Int((newString?.substringToIndex((newString?.startIndex.advancedBy(1))!))!)
+            let oString = discoveryInfoString?.substringFromIndex(4)
+            let end = Int((oString?.substringToIndex((newString?.startIndex.advancedBy(1))!))!)
+            
+            let valueS = discoveryInfoString?.substringFromIndex(5)
+            let s = PeopleViewController.AnnounceSegment(value: valueS!, index: val!)
+            if val != 1 {
+                userStrings[0].addToSegments(s)
+            }
+            else
+            {
+                let json = JSON(data: )
+                
+                PeerHelper.addNewPeerToList(Peer(json: json))
+
+                userStrings = []
+                userStrings.append((valueS!,(val)!,(end)!))
+            }
+            
+            
         }
     }
     
@@ -143,6 +193,26 @@ extension PeopleViewController: PPKControllerDelegate{
         else {
             NSLog("%@ is not yet in range", peer.peerID);
         }
+    }
+    
+    private func removeAndReturnSegmentOrder(segment: String) -> AnnounceSegment{
+        var index: Range<String.Index>
+        var indexSubstring: String
+        var segmentOrder: Int
+        var valueSubstring: String
+        
+        if segment.lowercaseString.rangeOfString("--") != nil {
+            index = segment.lowercaseString.rangeOfString("--")!
+            valueSubstring = segment.substringWithRange(segment.startIndex...index.startIndex)
+            indexSubstring = segment.substringWithRange(index.endIndex...segment.endIndex)
+        }
+        
+        if indexSubstring.lowercaseString.rangeOfString("/") != nil {
+            index = indexSubstring.lowercaseString.rangeOfString("/")!
+            segmentOrder = Int(indexSubstring.substringWithRange(indexSubstring.startIndex...index.endIndex))!
+        }
+        
+        return AnnounceSegment(value: valueSubstring, index: segmentOrder)
     }
 }
 

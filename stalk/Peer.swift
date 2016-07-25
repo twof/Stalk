@@ -61,10 +61,19 @@ class Peer: PPKPeer {
         
         for user in adjacencyListJson{
             self.adjacencyList.append(User(peerID: user["peerID"].stringValue, name: user["name"].stringValue, latitude: user["latitude"].doubleValue, longitude: user["longitude"].doubleValue, points: user["points"].intValue, depth: user["depth"].intValue + 1))
+            
+            
         }
         
-        P2PHelper.constructAnnounceString()
         super.init()
+        print(PPKController.myPeerID())
+//        PeerHelper.userList = self.adjacencyList
+        for user in self.adjacencyList
+        {
+            PeerHelper.userList.append(user)
+        }
+        P2PHelper.constructAnnounceString()
+            
         self.removeRedundencies()
     }
     
